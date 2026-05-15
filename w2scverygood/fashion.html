@@ -136,13 +136,15 @@
             const rights = document.getElementsByClassName("rstyle")
             const lefts = document.getElementsByClassName("lstyle")
             console.log(rights[0].children)
+            //Style for fboxes, rights and lefts are equivalent with different left/right positioning
             for(var item of rights){
+                //Position existing elements
                 item.children[0].style.right="0px"
                 item.children[1].style.right="10px"
                 item.children[2].style.left="0px"
                 item.children[2].style.borderBottomRightRadius="15px"
                 item.children[3].style.left="5px"
-                item.children[3].addEventListener("click",function() {
+                item.children[3].addEventListener("click",function() { //Make small icon spin cause its cool
                     this.animate([
                         { transform: 'rotate(0deg)' },
                         { transform: 'rotate(360deg)' }
@@ -151,6 +153,7 @@
                         iterations: 1
                     });})
 
+                //Create gradient at top of text box
                 let c1=item.children[2].style.backgroundColor
                 let c2=item.style.backgroundColor
                 const newDiv = document.createElement("div");
@@ -162,7 +165,7 @@
                 console.log(c1)
                 console.log(c2)
             }
-            for(var item of lefts){
+            for(var item of lefts){ //Same as in rights
                 item.children[0].style.left="0px"
                 item.children[1].style.left="10px"
                 item.children[2].style.right="0px"
@@ -192,20 +195,10 @@
             for(var show of slideshows){
                 show.dataset['index']=0;
             }
-            function autoslides(show,move){
-                let index = Number(show.dataset['index']);
-                let images=show.dataset['images'].split(',')
-                index=index+move
-                console.log(show)
-                console.log(index)
-                if(index==images.length){index=0}
-                if(index==-1){index=images.length-1}
-                show.src=images[index]
-                show.dataset['index']=index;                
-            }
+            
             for(var show of slideshows){
                 autoslides(show,0)
-                const slidemanager = {
+                const slidemanager = { //Manager to tie slideshow, interval and control buttons together
                     show: show,
                     interval: [],
                     int(){this.interval=setInterval(() => {
@@ -215,6 +208,7 @@
                 }
                 console.log(show.parentElement.classList)
                 
+                //Create buttons
                 const playbtn = document.createElement("img");
                 playbtn.className="playbtn"
                 playbtn.src="imgs/pause.png"
@@ -233,6 +227,7 @@
                 rightbtn.addEventListener("click",function() {moveslide(slidemanager,1)})
                 show.parentNode.appendChild(rightbtn)
 
+                //Position buttons left or right depending on Fbox style
                 if(show.parentElement.className.includes("lstyle")){
                     rightbtn.style.right="155px"
                     playbtn.style.right="222.5px"
@@ -251,7 +246,16 @@
                 //    autoslides(show,1);
                 //}, 3000);
             }
-            function playpause(btn, slidemanager){
+            function autoslides(show,move){ //Move slideshow
+                let index = Number(show.dataset['index']); //Get index and list of images tied to specific show
+                let images=show.dataset['images'].split(',')
+                index=index+move  //move index
+                if(index==images.length){index=0} //loop if necessary
+                if(index==-1){index=images.length-1}
+                show.src=images[index] //set to new image
+                show.dataset['index']=index; //save index               
+            }
+            function playpause(btn, slidemanager){ //Play or pause slideshow
                 console.log(btn)
                 if(slidemanager.interval==null){
                     slidemanager.int()
@@ -263,7 +267,7 @@
                 console.log(slidemanager.interval)
                 btn.src="imgs/play.png"}
             }
-            function moveslide(slidemanager, move){
+            function moveslide(slidemanager, move){ //Wrapper function for arrow controls
                 autoslides(slidemanager.show, move)
             }
         </script>
