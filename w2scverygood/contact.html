@@ -5,7 +5,7 @@
         <title>Welcome to Snowcape - Contact</title>
         <link rel="icon" href="imgs/flag.png">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="fstyle.css">
+        <link rel="stylesheet" type="text/css" href="cstyle.css">
         <script src="script.js"></script>
     </head>
     <!-- Super duper copyright notice i dont care if you copy this code but if you do then 
@@ -17,7 +17,7 @@
             <a href="fashion.html"><div class="navbarc"></div></a>
             <a href="tourism.html"><div class="navbard"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
             <a href="locals.html"><div class="navbare"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
-            <a href="contact.html"><div class="navbarf"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
+            <a href="contact.html"><div class="navbarf"></div></a>
         </div>
         <div class="cont">
         <img class="contactletter" src="imgs/mail.jpg" style="position: absolute;">
@@ -26,9 +26,78 @@
             My SpaceHey profile is <a href="https://spacehey.com/handsomegamer">Super duper cool and handsome gamer</a>.
             My switch friend code is SW-0790-5439-8988.
             I also have another website at <a href="https://icyhuman.github.io/index.html">icyhuman.github.io</a>.
-            Finally, you could write something in my guestbook down below.(guestbook pending)
+            This section is still kinda WIP, hoping to have a guestbook soon.
         </b></p>
         </div>
-        <p></p>
+        <div class="letterarea" id="larea" style="width: 1280px; height: 1280px; position: relative; margin: auto;">
+            
+            <!-- begin wwww.htmlcommentbox.com  not worky good stuff
+            <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+            <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+            <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24iRV4k9fjBcVMo5S7aJ.SF."+"&opts=16798&num=10&ts=1779635983630");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*--><!--*/ </script>-->
+            <!-- end www.htmlcommentbox.com -->
+            <!-- <iframe src="https://snowcape.atabook.org/" id="atabook"></iframe>-->
+        </div>
+        <script>
+            const larea=document.getElementById('larea')
+            function makeletter(text, name, date){
+                const letter = document.createElement("div");
+                letter.className="letter"
+                const dearj = document.createElement("p");
+                dearj.className="dearj"
+                dearj.innerHTML="Dear Jørgen"
+                const mainlbox = document.createElement("div");
+                mainlbox.className="mainlbox"
+                const mainl = document.createElement("p");
+                mainl.className="mainl"
+                mainl.innerHTML=text
+                const froml = document.createElement("p");
+                froml.className="froml"
+                froml.innerHTML="From "+name
+                const datel = document.createElement("p");
+                datel.className="datel"
+                datel.innerHTML=date
+
+                larea.appendChild(letter)
+                letter.appendChild(dearj)
+                letter.appendChild(mainlbox)
+                letter.appendChild(froml)
+                letter.appendChild(datel)
+                mainlbox.appendChild(mainl)
+
+                let styles=["hearts","cool","clouds","cherry","airmail","grafitti","dragonflies","stars","torn","roses","bluesky"]
+                let style = Math.floor(Math.random()* 11);
+                letter.classList.add(styles[style])
+
+                let rotate = Math.floor(Math.random()* 26)-13;
+                letter.style.transform="Rotate("+rotate+"deg)"
+                letter.addEventListener('mouseenter', () => {
+                    letter.style.transform = 'Rotate(0deg)';
+                    });
+                letter.addEventListener('mouseleave', () => {
+                    letter.style.transform = "Rotate("+rotate+"deg)";
+                    });
+
+
+            }
+            for(let i=0;i<15;i++ ){
+            makeletter(
+                "Making some letters to test my layout. Setting up a guestbook isn't that hard, but the level of customization is variable. Still trying to figure out what's the best way to do mine while keeping it customizable, sorry it doesn't work yet",
+                "Myself",
+                "18 Decembulon 2140"
+            )}
+
+            const atabook = document.getElementById('atabook');
+
+            atabook.addEventListener('load', function() {
+                console.log(this)
+                mload();
+            });
+            function mload(){
+                let messages=document.getElementById("messages")
+                console.log(atabook.contentWindow.document.body.innerHTML)
+            }
+
+        </script>
     </body>
 </html>
