@@ -74,6 +74,9 @@ div.navbara{
     width: 490px;
     height: 165px;
 }
+div.navbara:hover{
+    background-image: url(imgs/welcomeh.png);
+}
 div.navbarb{
     background-image: url("imgs/map.png");
     position: absolute;

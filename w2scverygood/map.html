@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Snowcape - Interactive map</title>
+        <link rel="icon" href="imgs/flag.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <!-- Super duper copyright notice i dont care if you copy this code but if you do then 
+     shoutout to the original creator, Icyhuman. Check out my cool site at snowcape.neocities.org-->
+    <body>
+        <div class="navbarcont">
+            <a href="index.html"><div class="navbara"></div></a>
+            <a href="map.html"><div class="navbarb"></div></a>
+            <a href="fashion.html"><div class="navbarc"></div></a>
+            <a href="tourism.html"><div class="navbard"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
+            <a href="locals.html"><div class="navbare"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
+            <a href="contact.html"><div class="navbarf"></div></a>
+        </div>
+        <div class="mapbox">
+        <div class="cont" id="cont">
+        <img src="imgs/mapnomarker.png" id="gabagool" style="position: absolute; z-index: 1;">
+        <img src="imgs/pin.png" class="box" id="box" onclick="byebye(this)">
+        <img class="pin" src="imgs/pin.png" style="left: 651px; top: 160px" onclick="pinclick(this, 'screenshots/2026031019182200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 540px; top: 491px" onclick="pinclick(this, 'screenshots/2021080818235400_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 522px; top: 297px" onclick="pinclick(this, 'screenshots/2021040117212000_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 207px; top: 106px" onclick="pinclick(this, 'screenshots/2026031221191500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 478px; top: 131px" onclick="pinclick(this, 'screenshots/2021073110423300_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 59px; top: 145px" onclick="pinclick(this, 'screenshots/2020120513581200_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 477px; top: 388px" onclick="pinclick(this, 'screenshots/2026022712025600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 101px; top: 211px" onclick="pinclick(this, 'screenshots/2026031019213500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 784px; top: 394px" onclick="pinclick(this, 'screenshots/2026031019285100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 436px; top: 160px" onclick="pinclick(this, 'screenshots/2026031019165600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 541px; top: 461px" onclick="pinclick(this, 'screenshots/2021052714290100_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 502px; top: 299px" onclick="pinclick(this, 'screenshots/2021022013210600_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 962px; top: 484px" onclick="pinclick(this, 'screenshots/2026011418432500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 1076px; top: 327px" onclick="pinclick(this, 'screenshots/2026021214505200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 658px; top: 406px" onclick="pinclick(this, 'screenshots/2020100414563700_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 1115px; top: 326px" onclick="pinclick(this, 'screenshots/2022072612353600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 428px; top: 350px" onclick="pinclick(this, 'screenshots/2020051215563900_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 209px; top: 478px" onclick="pinclick(this, 'screenshots/2026020113331700_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 684px; top: 440px" onclick="pinclick(this, 'screenshots/2021031514024800_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 546px; top: 416px" onclick="pinclick(this, 'screenshots/2021082923590600_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 662px; top: 474px" onclick="pinclick(this, 'screenshots/2024051723172800_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 775px; top: 484px" onclick="pinclick(this, 'screenshots/2024042917023600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 564px; top: 202px" onclick="pinclick(this, 'screenshots/2021081514333000_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 491px; top: 424px" onclick="pinclick(this, 'screenshots/2021052415185000_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 692px; top: 349px" onclick="pinclick(this, 'screenshots/2026031313554600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 104px; top: 567px" onclick="pinclick(this, 'screenshots/2026031221231600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 746px; top: 463px" onclick="pinclick(this, 'screenshots/2023031718255600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 495px; top: 218px" onclick="pinclick(this, 'screenshots/2026031019315700_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 437px; top: 501px" onclick="pinclick(this, 'screenshots/2021033112194200_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 574px; top: 416px" onclick="pinclick(this, 'screenshots/2020112612001300_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 887px; top: 284px" onclick="pinclick(this, 'screenshots/2020071521571000_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 903px; top: 422px" onclick="pinclick(this, 'screenshots/2020111606355500_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 688px; top: 383px" onclick="pinclick(this, 'screenshots/2020040714451000_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 206px; top: 209px" onclick="pinclick(this, 'screenshots/2026031019161800_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 354px; top: 410px" onclick="pinclick(this, 'screenshots/2020092814594300_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 508px; top: 378px" onclick="pinclick(this, 'screenshots/2026010200080200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 141px; top: 139px" onclick="pinclick(this, 'screenshots/2021110409420100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 895px; top: 507px" onclick="pinclick(this, 'screenshots/2026031019255700_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 892px; top: 196px" onclick="pinclick(this, 'screenshots/2020072915011300_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 560px; top: 235px" onclick="pinclick(this, 'screenshots/2026031019335000_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 850px; top: 457px" onclick="pinclick(this, 'screenshots/2024042917032400_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 714px; top: 269px" onclick="pinclick(this, 'screenshots/2021020219065700_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 391px; top: 514px" onclick="pinclick(this, 'screenshots/2021030217242900_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 481px; top: 255px" onclick="pinclick(this, 'screenshots/2020091413082300_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 102px; top: 476px" onclick="pinclick(this, 'screenshots/2026031019141600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 124px; top: 117px" onclick="pinclick(this, 'screenshots/2026012715225400_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 536px; top: 358px" onclick="pinclick(this, 'screenshots/2020100414575400_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 826px; top: 457px" onclick="pinclick(this, 'screenshots/2020123121412700_s.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 445px; top: 266px" onclick="pinclick(this, 'screenshots/2026020212325300_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 648px; top: 539px" onclick="pinclick(this, 'screenshots/2024042916561800_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 625px; top: 481px" onclick="pinclick(this, 'screenshots/2024042916581600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 572px; top: 532px" onclick="pinclick(this, 'screenshots/2026012715045200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 732px; top: 228px" onclick="pinclick(this, 'screenshots/2026020513335700_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 70px; top: 113px" onclick="pinclick(this, 'screenshots/2026012715213900_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 206px; top: 303px" onclick="pinclick(this, 'screenshots/2026031221213700_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 491px; top: 489px" onclick="pinclick(this, 'screenshots/2024042916552100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 589px; top: 487px" onclick="pinclick(this, 'screenshots/2026041715402500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 626px; top: 438px" onclick="pinclick(this, 'screenshots/2026041715460300_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 618px; top: 162px" onclick="pinclick(this, 'screenshots/2026041715422500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 634px; top: 306px" onclick="pinclick(this, 'screenshots/2026041715375000_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 568px; top: 480px" onclick="pinclick(this, 'screenshots/2026041715403300_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 756px; top: 137px" onclick="pinclick(this, 'screenshots/2026041715345200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 677px; top: 245px" onclick="pinclick(this, 'screenshots/2026041715380800_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 628px; top: 395px" onclick="pinclick(this, 'screenshots/2026041715390500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 851px; top: 535px" onclick="pinclick(this, 'screenshots/2026041715323500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 102px; top: 382px" onclick="pinclick(this, 'screenshots/2026040121285100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 575px; top: 450px" onclick="pinclick(this, 'screenshots/2026040217532400_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 815px; top: 210px" onclick="pinclick(this, 'screenshots/2026041715353500_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 793px; top: 284px" onclick="pinclick(this, 'screenshots/2026041715360800_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 99px; top: 296px" onclick="pinclick(this, 'screenshots/2026040121301800_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 526px; top: 208px" onclick="pinclick(this, 'screenshots/2026041715425200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 139px; top: 172px" onclick="pinclick(this, 'screenshots/2026041715472300_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 399px; top: 178px" onclick="pinclick(this, 'screenshots/2026041715435600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 635px; top: 250px" onclick="pinclick(this, 'screenshots/2026041715370200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 489px; top: 457px" onclick="pinclick(this, 'screenshots/2026041715413200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 206px; top: 394px" onclick="pinclick(this, 'screenshots/2026040217551100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 677px; top: 532px" onclick="pinclick(this, 'screenshots/2026041715405900_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 770px; top: 533px" onclick="pinclick(this, 'screenshots/2026041715321100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 439px; top: 210px" onclick="pinclick(this, 'screenshots/2026041715432600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 825px; top: 400px" onclick="pinclick(this, 'screenshots/2026041715334100_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 365px; top: 353px" onclick="pinclick(this, 'screenshots/2026041715444400_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 727px; top: 326px" onclick="pinclick(this, 'screenshots/2026041715462400_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 700px; top: 135px" onclick="pinclick(this, 'screenshots/2026041715342700_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 732px; top: 391px" onclick="pinclick(this, 'screenshots/2026041715313200_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 99px; top: 113px" onclick="pinclick(this, 'screenshots/2026041715482000_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 58px; top: 174px" onclick="pinclick(this, 'screenshots/2026041715491600_c.jpg')">
+        <img class="pin" src="imgs/pin.png" style="left: 593px; top: 335px" onclick="pinclick(this, 'screenshots/2026041715395000_c.jpg')">
+        <img src="imgs/Howtobtn.png" style="position:absolute; right: 5px; top: 5px; z-index: 2;" onclick="howbtn('imgs/howtomap.png')">
+    <p></p>
+    <button onclick="preload()" style="bottom: 0px; position: absolute;">Preload images - Use if previous image is visible when clicking a new pin</button></div>
+        <p></p></div><div class="mapbox"> <p>Welcome to the interactive map for Snowcape, my Animal Crossing island. The site is still a work in progress, but I recommend looking at my cool new fashion section.</p>
+    <p>I played this game actively for a couple of years after it came out, and I still check back on it occationally. Over that time I've made a bunch of stuff, and taken over a thousand screenshots. 
+        I figured I should do something with all those screenshots, and ended up combining it with my programming skills to create this cool map. Please enjoy.
+        <br>The mapping was done with an awful mapping tool built with hopes, dreams and duct tape. To peep the horror, check out <a href="https://github.com/Icyhuman/map-pinner">the github repo.</a></p>
+    </div></body>
+</html>
