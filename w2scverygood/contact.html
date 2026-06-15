@@ -30,8 +30,7 @@
         </b></p>
         </div>
         <div class="letterarea" id="larea" style="width: 1280px; height: 1280px; position: relative; margin: auto;">
-            <iframe src="https://snowcape.atabook.org/" id="atabook" style="height: 400px; width: 300px;"></iframe>
-            <a><div style="position: absolute;left: 320px;top: 0px; height: 200px;width: 300px; background-color: rgb(216, 91, 247);overflow: scroll;"><p>Welp<br>Turns out some Neocities policy change really limits my guestbook options to pretty much just iFrames, which complicates my cool guestbook idea:( Just use the guestbook on the left I guess. I'll manually copy the comments into my cool letter layout or something lol.</p></div></a>
+            <iframe src="https://icyhuman.github.io/neocitiesgb/guestbook.html" id="atabook" style="width: 1280px;height: 1080px;"></iframe>
         </div>
         <script>
             const larea=document.getElementById('larea')
@@ -85,16 +84,16 @@
                 ["This layout only has room for 15 letters before I need to make pages. At the current pace, that means I have to fix it in a couple years lol",
                 "Fred Flintstone","Sample date 25th"]
             ]
-            for(mail in mailbag){
-                makeletter(mailbag[mail][0],mailbag[mail][1],mailbag[mail][2])
-            }
+            //for(mail in mailbag){
+            //    makeletter(mailbag[mail][0],mailbag[mail][1],mailbag[mail][2])
+            //}
 
-            for(let i=0;i<12;i++ ){
-            makeletter(
-                "Filler letters because I don't want my layout feeling too empty. Also I need to make graphics for the holes in the layout",
-                "Myself",
-                "18 Decembulon 2140"
-            )}
+            //for(let i=0;i<12;i++ ){
+            //makeletter(
+            //    "Filler letters because I don't want my layout feeling too empty. Also I need to make graphics for the holes in the layout",
+            //    "Myself",
+            //    "18 Decembulon 2140"
+            //)}
 
             const atabook = document.getElementById('atabook');
 

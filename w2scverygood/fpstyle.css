@@ -1,0 +1,54 @@
+body{
+    background-image: url(../frontpagetemp/bgguy.jpg);
+    background-size: 100%;
+}
+
+img.polaroid{
+    width: 100%;
+}
+
+div.polaroid{
+    position: absolute;
+    width: 16vw;
+    transition-duration: 0.5s;
+}
+div.map{
+    transform: rotate(-12deg);
+    left: 70vw;
+    top: 2vw;
+}
+div.map:hover{
+    transform: rotate(1deg);
+}
+div.fashion{
+    transform: rotate(7deg);
+    right: 3vw;
+    top: 20vw;
+}
+div.fashion:hover{
+    transform: rotate(2deg);
+}
+div.tourism{
+    transform: rotate(-12deg);
+    left: 65vw;
+    top: 26vw;
+}
+div.tourism:hover{
+    transform: rotate(1deg);
+}
+div.locals{
+    transform: rotate(-12deg);
+    left: 10vw;
+    top: 26vw;
+}
+div.locals:hover{
+    transform: rotate(1deg);
+}
+div.contact{
+    transform: rotate(2deg);
+    left: 50vw;
+    top: 16vw;
+}
+div.contact:hover{
+    transform: rotate(-7deg);
+}
