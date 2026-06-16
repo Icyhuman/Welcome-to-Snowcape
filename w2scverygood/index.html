@@ -15,11 +15,63 @@
         <a href="tourism.html"><div class="polaroid tourism"><img src="imgs/ptourismwip.png" class="polaroid"></div></a>
         <a href="locals.html"><div class="polaroid locals"><img src="imgs/plocalswip.png" class="polaroid"></div></a>
         <a href="contact.html"><div class="polaroid contact"><img src="imgs/pcontact.png" class="polaroid"></div></a>
-        <div style="position: absolute;top: 2vw; left: 2vw; height: 22vw; width: 30vw; background-color: azure; overflow-x: scroll;">
-            <p style="margin-left: 1vw; margin-right: 1vw;">
-                Welcome to Snowcape is a work in progress. I have cool sections on my site. The polaroids are links. Click them. The sections are great I promise.
-                My top recommendation is the interactive map because it was a pretty big project to put together and also it's cool.
-            </p>
+        <div class="yapbox">
+            <div class="yapbar">
+                <div class="babout" id=babout><p style="margin: 0cm; text-align: center;">About</p></div>
+                <div class="bup" id="bup"><p style="margin: 0cm; text-align: center;">Updates</p></div>
+                <div class="blink" id="blink"><p style="margin: 0cm; text-align: center;">Links</p></div>
+            </div>
+            <div id="about">
+                <h3>Welcome to my site!</h3>
+                <p>
+                    Hey! I'm Jørgen, and this is my website, Welcome To Snowcape. The site started as an interactive map I made to show off my 
+                    Animal Crossing island to my friends, and eventually grew into whatever this is.
+                </p>
+                <p>I'm a late twentysomething with a tech degree, who fell a few years behind in life due to depression and ended up graduating after AI turned the job market into super hell. 
+                    With job hunting being borderline impossible, I needed to use my coding skills for something, and ended up gravitating towards web development.
+                </p>
+                <p>A lot of people my age write about how they grew up on the old internet and miss it. I don't know, I explored the internet until I found flash games, and then I didn't really need to explore anymore because Fancy Pants Adventure was awesome:)
+                </p>
+                <p>Anyways, sorry for rambling, I am prone to doing that. Please enjoy the site!</p>
+            </div>
+            <div id="updates" style="display: none;">
+                <h3>Updates</h3>
+                <p>16/06-26: Added the front page, which includes this updates section</p>
+                <p>The ancient past(aka before the update section existed): Very cool map, fashion and contact sections</p>
+            </div>
+            <div id="links" style="display: none;">
+                <p>
+                Here's a button if you want to link to my site:</p>
+                <img src="imgs/button.png" style="margin-left: 1vw;">
+                <p>Other cool websites I've found</p>
+            </div>
         </div>
         </body>
+        <script>
+            const about=document.getElementById("about")
+            const updates=document.getElementById("updates")
+            const links=document.getElementById("links")
+            function sabout(){
+                about.style.display="block"
+                updates.style.display="none"
+                links.style.display="none"
+            }
+            function supdates(){
+                about.style.display="none"
+                updates.style.display="block"
+                links.style.display="none"
+            }
+            function slinks(){
+                about.style.display="none"
+                updates.style.display="none"
+                links.style.display="block"
+            }
+            const babout=document.getElementById("babout")
+            babout.addEventListener("click", (event) => {sabout()})
+            const bup=document.getElementById("bup")
+            bup.addEventListener("click", (event) => {supdates()})
+            const blink=document.getElementById("blink")
+            blink.addEventListener("click", (event) => {slinks()})
+
+        </script>
 </html>

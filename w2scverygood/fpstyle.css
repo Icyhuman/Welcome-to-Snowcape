@@ -1,5 +1,7 @@
 body{
-    background-image: url(../frontpagetemp/bgguy.jpg);
+    background-image: url(imgs/bgguy.jpg);
+    background-color: rgb(20, 19, 18);
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
@@ -51,4 +53,45 @@ div.contact{
 }
 div.contact:hover{
     transform: rotate(-7deg);
+}
+
+div.yapbox{
+    position: absolute;
+    top: 2vw; left: 2vw; height: 22vw; width: 31vw; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    overflow-x: scroll;
+    border-radius: 20px; border-color: antiquewhite; border-width: 5px; 
+    border-style: double;
+}
+div.yapbar{
+    width: 100%; height: 30px;background-color: aliceblue; 
+    display: flex; position: sticky;top: 0;
+}
+div.babout{
+    width: 33%; height: 30px;background-color: rgb(17, 73, 122); align-items: center;transition-duration: 0.5s;
+}
+div.babout:hover{
+    background-color: rgb(72, 21, 139);
+}
+div.bup{
+    width: 34%; height: 30px;background-color: rgb(9, 56, 97); align-items: center;transition-duration: 0.5s;
+}
+div.bup:hover{
+    background-color: rgb(47, 10, 97);
+}
+div.blink{
+    width: 33%; height: 30px;background-color: rgb(17, 73, 122); align-items: center; transition-duration: 0.5s;
+}
+div.blink:hover{
+    background-color: rgb(72, 21, 139);
+}
+p{
+    margin-left: 1vw; 
+    margin-right: 1vw;
+    color: white;
+}
+h3{
+    margin-left: 1vw; 
+    margin-right: 1vw;
+    color: white;
 }
