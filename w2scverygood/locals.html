@@ -19,33 +19,37 @@
             <a href="contact.html"><div class="navbarf"></div></a>
         </div>
         <div style="position: relative; background-color: blueviolet; width: 400px;height: 720px;border-radius: 20px;">
-            <div style="position: absolute; background-color: whitesmoke; width: 75px; top: 10px;left: 10px;height: 75px;border-radius: 5px;">
-                <p>SIGGY</p>
+                <img id="siggy" src="imgs/locals/Jørgensig.png" style="position: absolute; width: 75px; top: 10px;left: 10px;height: 75px;border-radius: 5px;">
+            <div style="position: absolute; background-color: whitesmoke; width: 300px; top: 10px;right: 10px;height: 70px;border-radius: 20px;align-content: center;">
+                <h1 id="Villagername" style="text-align: center;font-size: 50px; margin: 0px;">Villagername</h1>
             </div>
-            <div style="position: absolute; background-color: whitesmoke; width: 300px; top: 10px;right: 10px;height: 70px;border-radius: 20px;">
-                <h1 style="text-align: center;font-size: xx-large;">Villagername</h1>
+            <div class="profilefield" style="top: 90px; left: 10px;">
+                <img src="imgs/species.png" style="position: absolute; height: 27px;margin: 0 auto; top: -5px; left: 0;right: 0;">
+                <p id="Species" class="profiletext">Meow</p>
             </div>
-            <div style="position: absolute;height: 40px; width: 170px; background-color: aqua;top: 90px; left: 10px; border-radius: 10px;">
-                <p>Species</p>
+            <div class="profilefield" style="top: 155px; left: 10px;">
+                <img src="imgs/bday.png" style="position: absolute; height: 27px;margin: 0 auto; top: -5px; left: 0;right: 0;">
+                <p id="bday" class="profiletext">B-day</p>
             </div>
-            <div style="position: absolute;height: 40px; width: 170px; background-color: aqua;top: 140px; left: 10px; border-radius: 10px;">
-                <p>Gender</p>
+            <div class="profilefield" style="top: 220px; left: 10px;">
+                <img src="imgs/dreamjob.png" style="position: absolute; height: 20px;margin: 0 auto; top: -5px; left: 0;right: 0;">
+                <p id="dreamjob" class="profiletext">Dream job</p>
             </div>
-            <div style="position: absolute;height: 40px; width: 170px; background-color: aqua;top: 190px; left: 10px; border-radius: 10px;">
-                <p>B-day</p>
-            </div>
-            <div style="position: absolute;height: 40px; width: 170px; background-color: aqua;top: 240px; left: 10px; border-radius: 10px;">
-                <p>Dream job</p>
-            </div>
-            <div style="position: absolute;height: 200px; width: 200px; background-color: aqua;top: 85px; right: 10px; border-radius: 100px;">
-                <p>photo</p>
-            </div>
-            <div style="position: absolute;aspect-ratio: 16/9; width: 380px; background-color: aqua;bottom: 10px; right: 10px; border-radius: 10px;">
-                <p>screenshot</p>
-            </div>
-            <div style="position: absolute;height: 197px; width: 380px; background-color: aqua;top: 290px; right: 10px; border-radius: 10px;">
-                <p>description</p>
+                <img id="pfp" src="imgs/locals/Jørgenpfp.png" style="position: absolute;height: 200px; width: 200px;top: 85px; right: 10px; border-radius: 100px;">
+                <img id="screenshot" src="imgs/locals/Jørgenss.jpg" style="position: absolute; width: 380px;aspect-ratio: 16/9; border-radius: 10px;bottom: 10px; right: 10px;">
+            <div style="position: absolute;height: 197px; width: 380px; background-color: whitesmoke;top: 290px; right: 10px; border-radius: 10px;">
+                <p id="desc">description</p>
             </div>
         </div>
+        <script>
+            const vname=document.getElementById("Villagername")
+            const species=document.getElementById("Species")
+            const bday=document.getElementById("bday")
+            const dreamjob=document.getElementById("dreamjob")
+            const desc=document.getElementById("desc")
+            const pfp=document.getElementById("pfp")
+            const screenshot=document.getElementById("screenshot")
+            const siggy=document.getElementById("siggy")
+        </script>
         </body>
 </html>

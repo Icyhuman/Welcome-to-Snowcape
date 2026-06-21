@@ -127,3 +127,14 @@ div.navbarf{
 div.navbarf:hover{
     background-image:url("imgs/cnth.png");
 }
+
+
+
+
+div.profilefield{
+    position: absolute;height: 50px; width: 160px; background-color: whitesmoke;
+    border-radius: 10px;border: 5px dashed black; align-content: center;
+}
+p.profiletext{
+    text-align: center; position: absolute;bottom: 0px;left: 0;right: 0;margin: 0;
+}
