@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Welcome to Snowcape - Wip page come back later</title>
+        <title>Welcome to Snowcape - The timeline tearoom</title>
         <link rel="icon" href="imgs/flag.png">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
@@ -15,35 +15,90 @@
             <a href="map.html"><div class="navbarb"></div></a>
             <a href="fashion.html"><div class="navbarc"></div></a>
             <a href="tourism.html"><div class="navbard"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
-            <a href="locals.html"><div class="navbare"><p style="font-size: xx-large; color: red;"><b>WIP coming soon</b></p></div></a>
+            <a href="locals.html"><div class="navbare"></div></a>
             <a href="contact.html"><div class="navbarf"></div></a>
         </div>
 
-        <div></div>
+        <div class="mapbox">
+        <div style="position: relative;width: 1280px; height: 720px;margin: auto; margin-top: 5px;">
+            <div id="tearoom1" class="tearoom" style="display: block; animation: none;">
+                <img src="imgs/Tearoom1.jpg">
+                <div class="poster" style="top: 60px; left: 30px;" onclick="profileswitch(1)"><p class="nametag" style="background-color: rgb(9, 97, 246); color: white;">Bam</p></div>
+                <div class="poster" style="top: 60px; left: 235px;" onclick="profileswitch(2)"><p class="nametag" style="background-color: rgb(255, 248, 13);">Tammy</p></div>
+                <div class="poster" style="top: 265px; left: 240px;" onclick="profileswitch(3)"><p class="nametag" style="background-color: rgb(122, 37, 0);color: white;">Bangle</p></div>
+                <div class="poster" style="top: 60px; left: 440px;" onclick="profileswitch(4)"><p class="nametag" style="background-color: rgb(232, 176, 16);">Nate</p></div>
+                <div class="poster" style="top: 265px; left: 440px;" onclick="profileswitch(5)"><p class="nametag" style="background-color: rgb(255, 255, 255);">Annalisa</p></div>
+                <div class="poster" style="top: 60px; left: 642px;" onclick="profileswitch(6)"><p class="nametag" style="background-color: rgb(255, 208, 13);">Curlos</p></div>
+                <div class="poster" style="top: 265px; left: 642px;" onclick="profileswitch(7)"><p class="nametag" style="background-color: rgb(120, 221, 98);">Henry</p></div>
+                <div class="poster" style="top: 60px; left: 845px;" onclick="profileswitch(8)"><p class="nametag" style="background-color: rgb(255, 255, 255);">Tipper</p></div>
+                <div class="poster" style="top: 265px; left: 843px;" onclick="profileswitch(9)"><p class="nametag" style="background-color: rgb(255, 208, 13);">Tammi</p></div>
+                <div class="poster" style="top: 60px; left: 1047px;" onclick="profileswitch(10)"><p class="nametag" style="background-color: rgb(249, 147, 206);">Fuchsia</p></div>
+                <div class="poster" style="bottom: 0px; left: 470px; height: 240px; width: 250px;" onclick="profileswitch(0)"><p class="nametag" style="background-color: rgb(186, 133, 211);">Jørgen</p></div>
+            </div>
+            <div id="tearoom2" class="tearoom">
+                <img src="imgs/Tearoom2.jpg">
+                <div class="posterw" style="top: 30px; left: 30px;" onclick="profileswitch(11)"><p class="nametag" style="background-color: rgb(255, 255, 255);">Bones</p></div>
+                <div class="posterw" style="top: 30px; left: 242px;" onclick="profileswitch(12)"><p class="nametag" style="background-color: rgb(122, 37, 0);color: white;">Fauna</p></div>
+                <div class="posterw" style="top: 30px; left: 457px;" onclick="profileswitch(13)"><p class="nametag" style="background-color: rgb(249, 147, 206);">Marina</p></div>
+                <div class="posterw" style="top: 30px; left: 670px;" onclick="profileswitch(14)"><p class="nametag" style="background-color: rgb(160, 111, 206);">Static</p></div>
+                <div class="posterw" style="top: 30px; left: 885px;" onclick="profileswitch(15)"><p class="nametag" style="background-color: rgb(25, 76, 137);color: white;">Roald</p></div>
+                <div class="posterw" style="top: 30px; left: 1097px;" onclick="profileswitch(16)"><p class="nametag" style="background-color: rgb(228, 184, 135);">Zucker</p></div>
+                <div class="poster" style="bottom: 0px; left: 430px; height: 250px; width: 250px;" onclick="profileswitch(0)"><p class="nametag" style="background-color: rgb(186, 133, 211);">Jørgen</p></div>
+            </div>
+            <div id="tearoom3" class="tearoom">
+                <img src="imgs/Tearoom3.jpg">
+                <div class="posterw" style="top: 25px; left: 35px;" onclick="profileswitch(17)"><p class="nametag" style="background-color: rgb(255, 249, 143);">Willow</p></div>
+                <div class="posterw" style="top: 25px; left: 237px;" onclick="profileswitch(18)"><p class="nametag" style="background-color: rgb(228, 184, 135);">Melba</p></div>
+                <div class="posterw" style="top: 25px; left: 442px;" onclick="profileswitch(19)"><p class="nametag" style="background-color: rgb(118, 73, 78);color: white;">Reneigh</p></div>
+                <div class="posterw" style="top: 25px; left: 645px;" onclick="profileswitch(20)"><p class="nametag" style="background-color: rgb(122, 37, 0);color: white;">Carmen</p></div>
+                <div class="posterw" style="top: 25px; left: 853px;" onclick="profileswitch(21)"><p class="nametag" style="background-color: rgb(255, 248, 13);">Mira</p></div>
+                <div class="posterw" style="top: 25px; left: 1060px;" onclick="profileswitch(22)"><p class="nametag" style="background-color: rgb(255, 64, 64);">Kid Cat</p></div>
+                <div class="poster" style="bottom: 0px; left: 430px; height: 250px; width: 250px;" onclick="profileswitch(0)"><p class="nametag" style="background-color: rgb(186, 133, 211);">Jørgen</p></div>
+            </div>
+            <div id="tearoom4" class="tearoom">
+                <img src="imgs/Tearoom4.jpg">
+                <div class="posterw" style="top: 25px; left: 17px;" onclick="profileswitch(23)"><p class="nametag" style="background-color: rgb(255, 255, 255);">Tia</p></div>
+                <div class="posterw" style="top: 27px; left: 220px;" onclick="profileswitch(24)"><p class="nametag" style="background-color: rgb(255, 97, 131);">Freya</p></div>
+                <div class="posterw" style="top: 29px; left: 427px;" onclick="profileswitch(25)"><p class="nametag" style="background-color: rgb(217, 217, 255);">Quinn</p></div>
+                <div class="posterw" style="top: 30px; left: 638px;" onclick="profileswitch(26)"><p class="nametag" style="background-color: rgb(255, 255, 255);">Kabuki</p></div>
+                <div class="posterw" style="top: 31px; left: 854px;" onclick="profileswitch(27)"><p class="nametag" style="background-color: rgb(255, 208, 13);">Tangy</p></div>
+                <div class="posterw" style="top: 32px; left: 1073px;" onclick="profileswitch(28)"><p class="nametag" style="background-color: rgb(139, 205, 234);">Ione</p></div>
+                <div class="poster" style="bottom: 0px; left: 550px; height: 250px; width: 250px;" onclick="profileswitch(0)"><p class="nametag" style="background-color: rgb(186, 133, 211);">Jørgen</p></div>
+            </div>
+            <img src="imgs/right.png" style="position: absolute; right: 0px; bottom: 0px;background-color: rgba(255,255,255,0.5);" onclick="teaarrows(1)">
+            <img src="imgs/left.png" style="position: absolute; left: 0px; bottom: 0px;background-color: rgba(255,255,255,0.5);" onclick="teaarrows(-1)">
+        
 
 
-        <div id="Profbox" style="position: relative; background-color: blueviolet; width: 400px;height: 720px;border-radius: 20px;">
-                <img id="siggy" src="imgs/locals/Jørgensig.png" style="position: absolute; width: 75px; top: 10px;left: 10px;height: 75px;border-radius: 5px;">
-            <div style="position: absolute; background-color: whitesmoke; width: 300px; top: 10px;right: 10px;height: 70px;border-radius: 20px;align-content: center;">
-                <h1 id="Villagername" style="text-align: center;font-size: 50px; margin: 0px;">Villagername</h1>
+            <div id="Profbox" class="profbox">
+                    <img id="siggy" src="imgs/locals/Jørgensig.png" style="position: absolute; width: 75px; top: 10px;left: 10px;height: 75px;border-radius: 5px;z-index: 2;">
+                <div style="position: absolute; background-color: whitesmoke; width: 300px; top: 10px;right: 10px;height: 70px;border-radius: 20px;align-content: center;">
+                    <h1 id="Villagername" style="text-align: center;font-size: 50px; margin: 0px;">Villagername</h1>
+                </div>
+                <div class="profilefield" style="top: 90px; left: 10px;">
+                    <img src="imgs/species.png" style="position: absolute; height: 27px;margin: 0 auto; top: -5px; left: 0;right: 0;">
+                    <p id="Species" class="profiletext">Meow</p>
+                </div>
+                <div class="profilefield" style="top: 155px; left: 10px;">
+                    <img src="imgs/bday.png" style="position: absolute; height: 27px;margin: 0 auto; top: -5px; left: 0;right: 0;">
+                    <p id="bday" class="profiletext">B-day</p>
+                </div>
+                <div class="profilefield" style="top: 220px; left: 10px;">
+                    <img src="imgs/dreamjob.png" style="position: absolute; height: 20px;margin: 0 auto; top: -5px; left: 0;right: 0;">
+                    <p id="dreamjob" class="profiletext">Dream job</p>
+                </div>
+                    <img id="pfp" src="imgs/locals/Jørgenpfp.png" style="position: absolute;height: 200px; width: 200px;top: 85px; right: 10px; border-radius: 100px;">
+                    <img id="screenshot" src="imgs/locals/Jørgenss.jpg" style="position: absolute; width: 380px;aspect-ratio: 16/9; border-radius: 10px;bottom: 10px; right: 10px;z-index: 2;">
+                <div style="position: absolute;height: 197px; width: 380px; background-color: whitesmoke;top: 290px; right: 10px; border-radius: 10px;overflow-y: scroll;">
+                    <p id="desc" style="margin-left: 5px;">this should never be visible. I am worried the javascript might be broken</p>
+                </div>
+                <div style="position: absolute; background-color: inherit; width: 60px;height: 60px;top: 0px;right: 400px;border-bottom-left-radius: 20px;">
+                    <img src="imgs/Xbtn.png" style="position: absolute; left: 5px; top: 5px; height: 50px; width: 50px;" onclick="profleave()">
+                </div>
             </div>
-            <div class="profilefield" style="top: 90px; left: 10px;">
-                <img src="imgs/species.png" style="position: absolute; height: 27px;margin: 0 auto; top: -5px; left: 0;right: 0;">
-                <p id="Species" class="profiletext">Meow</p>
-            </div>
-            <div class="profilefield" style="top: 155px; left: 10px;">
-                <img src="imgs/bday.png" style="position: absolute; height: 27px;margin: 0 auto; top: -5px; left: 0;right: 0;">
-                <p id="bday" class="profiletext">B-day</p>
-            </div>
-            <div class="profilefield" style="top: 220px; left: 10px;">
-                <img src="imgs/dreamjob.png" style="position: absolute; height: 20px;margin: 0 auto; top: -5px; left: 0;right: 0;">
-                <p id="dreamjob" class="profiletext">Dream job</p>
-            </div>
-                <img id="pfp" src="imgs/locals/Jørgenpfp.png" style="position: absolute;height: 200px; width: 200px;top: 85px; right: 10px; border-radius: 100px;">
-                <img id="screenshot" src="imgs/locals/Jørgenss.jpg" style="position: absolute; width: 380px;aspect-ratio: 16/9; border-radius: 10px;bottom: 10px; right: 10px;">
-            <div style="position: absolute;height: 197px; width: 380px; background-color: whitesmoke;top: 290px; right: 10px; border-radius: 10px;overflow-y: scroll;">
-                <p id="desc" style="margin-left: 5px;">description</p>
-            </div>
+        </div>
+        <h3>Welcome to my timeline tearoom</h3>
+        <p>My favorite part of my house is the timeline tearoom, where I have made a complete timeline of every villager to live on Snowcape. Navigate the room with the arrows. Click the posters(or me) to see a profile for each villager. Every image in the profils are also clickable. Check it out.</p>
         </div>
         <script>
             const vname=document.getElementById("Villagername")
@@ -54,53 +109,154 @@
             const pfp=document.getElementById("pfp")
             const screenshot=document.getElementById("screenshot")
             const siggy=document.getElementById("siggy")
+            const pbox=document.getElementById("Profbox")
+            var rind=0;
 
-            function profileswitch(vdata){
+            pfp.addEventListener("click",function() {
+                    let anim=Math.floor(Math.random()*4)
+                    let dura=Math.random()+0.5
+                    if(anim==0){
+                    this.animate([
+                        { transform: 'rotateZ(0deg) rotateX(0deg)' },
+                        { transform: 'rotateZ(120deg) rotateX(-180deg)' },
+                        { transform: 'rotateZ(240deg) rotateX(-360deg) rotateY(180deg)' },
+                        { transform: 'rotateZ(360deg) rotateX(-360deg) rotateY(360deg)' }
+                    ], {
+                        duration: 1200*dura,
+                        iterations: 1
+                    });}
+                    if(anim==1){
+                    this.animate([
+                        { transform: 'rotateZ(0deg)' },
+                        { transform: 'rotateZ(360deg)' }
+                    ], {
+                        duration: 500*dura,
+                        iterations: 2
+                    });}
+                    if(anim==2){
+                    this.animate([
+                        { transform: 'rotateX(0deg)' },
+                        { transform: 'rotateX(-360deg)' }
+                    ], {
+                        duration: 500*dura,
+                        iterations: 2
+                    });}
+                    if(anim==3){
+                    this.animate([
+                        { transform: 'rotateY(0deg)' },
+                        { transform: 'rotateY(360deg)' }
+                    ], {
+                        duration: 500*dura,
+                        iterations: 2
+                    });}
+                
+                })
+
+            siggy.addEventListener("click",function() {
+                    this.animate([
+                        { transform: 'translateX(0px) translateY(0px) scaleX(1) scaleY(1)' },
+                        { transform: 'translateX(75px) translateY(75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(75px) translateY(75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(75px) translateY(75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(75px) translateY(75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(0px) translateY(0px) scaleX(1) scaleY(1)' }
+                    ], {
+                        duration: 4000,
+                        iterations: 1
+                    });})
+            screenshot.addEventListener("click",function() {
+                    this.animate([
+                        { transform: 'translateX(0px) translateY(0px) scaleX(1) scaleY(1)' },
+                        { transform: 'translateX(-380px) translateY(-213.75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(-380px) translateY(-213.75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(-380px) translateY(-213.75px) scaleX(3) scaleY(3)' },
+                        { transform: 'translateX(0px) translateY(0px) scaleX(1) scaleY(1)' }
+                    ], {
+                        duration: 4000,
+                        iterations: 1
+                    });})
+
+            function profileswitch(index){
+                let vdata = vprofiles[index]
                 let name=vdata[0]
                 vname.innerHTML=name
                 species.innerHTML=vdata[1]
                 bday.innerHTML=vdata[2]
                 dreamjob.innerHTML=vdata[3]
-                desc.innerHTML=vdata[4]
+                pbox.style.backgroundColor=vdata[4]
+                desc.innerHTML=vdata[5]
                 pfp.src="imgs/locals/"+name+"pfp.png"
                 screenshot.src="imgs/locals/"+name+"ss.jpg"
                 siggy.src="imgs/locals/"+name+"sig.png"
+                pbox.style.display="block"
             }
-            profileswitch(["Kid Cat","Monkey","testin","Software Developer","descripto 2 delyuiftyuftyuxe edition"])
+            function profleave(){
+                console.log('byebye mr profile')
+                pbox.classList.add("profboxbye")
+                setTimeout(() => {
+                    pbox.classList.remove("profboxbye")
+                    pbox.style.display="none";
+                }, 400);}
 
+            function teaarrows(move){
+                //First time only, remove the thing that prevents tearoom1 from animating on page load
+                let t1=document.getElementById("tearoom1");
+                t1.style.removeProperty("animation");
+                //Then the function replaces itself with the real version to avoid checking tearoom1 every time
+                //As if that's a significant thing lol it pretty much doesnt matter but this is cool
+                function teaarrows(move){
+                    let rooms=document.getElementsByClassName("tearoom")
+                    let rold=rooms[rind]
+                    if(move==-1){rold.style.transformOrigin="right"} //Make room slide according to arrow
+                    else{rold.style.transformOrigin="left"}
+                    rold.classList.add("tearoomb")
+                    rind=rind+move
+                    if(rind<0){rind=rooms.length-1} //OOB detect
+                    if(rind==rooms.length){rind=0}
+                    if(move==-1){rooms[rind].style.transformOrigin="left"} //Slide right way code again
+                    else{rooms[rind].style.transformOrigin="right"}
+                    rooms[rind].style.display="block"
+                    setTimeout(() => {
+                        rold.classList.remove("tearoomb")
+                        rold.style.display="none";
+                    }, 300);
+                    console.log(rooms)
+                }
+                //After replacing self, run new version to actually change slides
+                teaarrows(move)
+            }
 
             const vprofiles = [
-                ["Jørgen","Human","May 28th","Software Developer","I still remember when I got into Animal crossing. Since I live in a small town in Norway, the closest video game store is a 2 hour bike ride away on the other side of a mountain. One summer day, I decided that I really wanted a new game for my 3ds, so I made the trip. There was this cool game called Animal Crossing: New Leaf on the shelf at Gamestop(this was back before Gamestop stopped operating in Norway, rip). Since then, I've put 300ish hours into New Leaf, as well as more than 1000 hours in New Horizons. I also got a Master's degree in informatics, but the job market is rough, so I'm doing data entry at an insurance firm for now. That's how I ended up making this website, actually. I needed to use my skills for something to not feel like I wasted 5 years of my life getting my degree. At least my education amounted to something I suppose. Shoutout to Eni for telling me about Neocities, I think this site is doing a pretty good job keeping me sane."],
-                ["Bam","Deer","November 7th","Soccer Player","One of the original residents present at the founding of Snowcape, I'll always remember this guy. Problem is, your starting villagers get really generic empty houses, and the ability to change their house to their regular one didn't exist yet. Thus, Bam was stuck with a terrible looking house, and when he brought up moving I went along with it and let him go."],
-                ["Tammy","Bear Cub","June 23rd","Movie Director","I still remember back in New Leaf when Tammy spontaneously came up to me and told me how much she appreciated me for being her friend. She used to live across the river from me, next to some perfect cherry trees. And then, when I got New Horizons and started my island, she was right there. After settling on a whole new island with me, she was eventually reunited with her old friend Tammi, and started a band. She's also great friends with old man Static, even if they sound like enemies sometimes. When crops were introduced to the game, I built a farm, and put it in her capable hands. I also have her amiibo because I obviously had to, she is pretty much the main character of Animal Crossing from my perspective. She's been there the whole time(except for 3 days when I moved her out and back in to reset her house). It's honestly hard to imagine her not being in my town. Also lmao I made her description twice the length of everyone else."],
-                ["Bangle","Tiger","August 27th","President","While she didn't do anything super memorable on Snowcape back in 2020, Bangle was the first former villager to come by the hotel after the 3.0 update released. She still recognised me even after all these years, which was really nice."],
-                ["Nate","Bear","August 16th","Sumo Wrestler","One of the key moments of Snowcape history is when I realized the superhero costume had an N on it, and worked with Nate's color scheme. On that day, Super Nate was born. He eventually moved out, but thanks to the Happy Home Paradise DLC, he is still hanging around in my game. He runs the café 'Seaside Snax' along with his friend Bones by day, and by night Super Nate works wiht his sidekick, Bone-Boy, solving crimes from their vacation home."],
-                ["Annalisa","Anteater","February 6th","Astronaut","Annalisa was part of the early crowd on the island, but wasn't really that notable. I also wasn't taking that many screenshots back then, so she's on like one photo that isn't a big group one. She's still pretty cute though."],
-                ["Curlos","Sheep","May 8th","Actor","If you've played New Horizons, you know that the tutorial features a villager moving in whether you like it or not. Yeah, that was Curlos. It's a lot easier to connect with villagers when you personally invite them to move in, at least for me. Due to that, I never really connected with Curlos. Nothing against the guy, he's pretty cute, but it just didn't click for me."],
-                ["Henry","Frog","September 21st","Writer","My sister was watching while I was looking for villagers, and when I ran into this Henry guy, she insisted that I invite him to Snowcape. He eventually grew on me, and has lived on Snowcape ever since. I often catch him singing, and always stop to listen."],
-                ["Tipper","Cow","August 25th","Violinist","Tipper hung around Snowcape for a while back in 2020, before eventually moving on to new places. After the Happy Home Paradise DLC came out, she's been running a farm at the archipelago, probably growing high quality vegetables."],
-                ["Tammi","Monkey","April 2nd","Artist","Tammi and Tammy used to be best friends in my town in New Leaf, so when I ran into Tammi in New Horizons I knew I had to reunite them. I even set up a band for them, with a cool logo, merch and everything. While Tammi eventually moved away from Snowcape, her and Tammy still have a vacation home together, and TnT is still going strong."],
-                ["Fuchsia","Deer","September 19th","Makeup Artist","When I ran into Fuchsia, I knew I had to invite her to Snowcape. Her color scheme was way too cool to pass up on. Sadly, as I kept building up Snowcape, I never really ended up building anything wild enough to match her energy. She eventually moved on to see the world, but she still has a vacation home at Paradise Planning that I visit sometimes."],
-                ["Bones","Dog","August 4th","Explorer","Bones never really stood out all that much. He was just the lovable little guy that I liked seeing walk around my island. This became especially true after the Super Nate incident, which caused Bones to slip into the role of a Bone-Boy, Super Nate's sidekick. He's still hanging out with Nate in the Happy Home Paradise DLC, running a café by day and solving crimes by night."],
-                ["Fauna","Deer","March 26th","Teacher","Durimg the time she lived on Snowcape, Fauna was probably one of my most photographed villagers. I mean, how could I not take pictures of her? She looks super cute pretty much no matter what she does. She eventually moved to my sister's island, where I've visited her several times. In more recent times, shes gotten herself a vacation home in the Happy Home Paradise DLC, and works as a chef alongside her assistant, Bettina."],
-                ["Marina","Octopus","June 26th","Pharmacist","I invited Marina to my island because octopus villagers are pretty cool and unique. Then I met Zucker, who is an octopus and also a food villager, which I like because it's cool and unique. As the kids say, Marina got straight up Mogged. Sometimes I wish you could have more villagers on your island, cause Marina is quite cute despite being a mogging victim."],
-                ["Static","Squirrel","July 9th","Guitarist","So, cool story about Static. I bought some villager amiibos on Etsy, so I could have amiibo of my favorite villagers. I also got a couple amiibo of villagers that I didn't have but thought looked cool. One of those was Static. Now guess who shows up at my campsite while I am waiting for the amiibo to arrive. This cool lil squirrel guy. At that point, I decided that it was destiny for him to live on my island, and he's stayed there ever since."],
-                ["Roald","Penguin","January 5th","Pro Golfer","Roald was one of my sister's favorite villagers, but he never really clicked for me. He eventually left Snowcape to make space for new villagers, but he still runs a car repair shop over at the archipelago, and is happily spending his days fixing up cars."],
-                ["Zucker","Octopus","March 8th","Chef","Buy his snacks please<br>Buy his snacks please...<br>Buy his snacks please!<br>For real though, I love this silly little guy. I built him a neat little café on the beach next to his house, and made his greeting into an ad for it. Very funny, love the guy, please visit Zucker's seaside snax."],
-                ["Willow","Sheep","November 26th","Designer","I like Willow a lot. Pink clothes look very good on her. She's also always very nice to me. To be honest, I can't exactly describe why I never want her to leave Snowcape, I just know she's great and I never want her to leave. Even if the clothes she gifts me never work with my outfits."],
-                ["Melba","Koala","April 12th","Professor","I always wanted to have a koala in my town back in New Leaf because their ears are very cool. Never found one though. But here, in New Horizons, I finally got my koala, and I couldn't be happier. Melba is the best and I love her."],
-                ["Reneigh","Horse","June 4th","Unknown","I used to have a gang on the island, who wore skull tees and were known as the 'Bone Zone'. I mean, it all happened in my head because it's not an actual thing in the game, but they were really cool and hung out and did cool stuff(trust me). Reneigh was a key member of this crew, alongside Tammy, Static and Melba. She has since calmed down a bit, and is now a waiter at the restaurant 'Mom's Spaghetti' alongside her friend Renée"],
-                ["Carmen","Rabbit","January 6th","Movie Director","They say absence makes the heart grow fonder, and I think Carmen confirms that. After she moved out the first time, I started to miss her, to the point where I got her amiibo to move her back in. She moved out again to make space for Ione, but it's all good because this was after the 3.0 update, where you can invite villagers to the hotel using their amiibo. She is now a permanent VIP at the Snowcape hotel."],
-                ["Mira","Rabbit","July 6th","Makeup Artist","Sorry that the screenshot of Mira is just her in a tent, but she only lived on my island for a week, before Kid Cat showed up at my campsite. I really wanted him, but someone had to leave, and the fact that Mira also lives in my old town on my 3ds meant that she was the easiest one to let go to make space for KC. She's still doing great back in old Snowcape though."],
-                ["Kid Cat","Cat","August 1st","Superhero","Kid Cat, or KC, came by to solve the totally real and not made up in my head crime wave caused by Super Nate moving away from Snowcape. He stayed around the island for a bit, but eventually left the now crime-free island of Snowcape to seek new adventures."],
-                ["Tia","Elephant","November 18th","Dentist","I really like tea, which might be why Tia resonated with me so much. I even ended up building her a cute little café called Tia's tea garden. It's been pretty popular since the 3.0 update introduced tourists. I smile a bit every time I walk past and see someone sitting there enjoying some tea."],
-                ["Freya","Wolf","December 14th","Judge","Freya used to live in my old New Leaf town as well, at least for a while. There's a reason I drew a suitcase for her signature. She moves into town, stays around for a few months, and then continues on her travels to see the world. Hopefully she will show up in my town whenever the next Animal crossing game comes out. She's a nice recurring character."],
-                ["Quinn","Eagle","January 20th","Unknown","Ever the fashion icon, Quinn eventually got too big for the little town of Snowcape. With my help, she's now got a photo studio set up, and she spends her days designing outfits and doing fashion shoots."],
-                ["Kabuki","Cat","November 29th","Actor","I already had a japanese themed area on my island, so when Kabuki showed up at the campsite it was pretty obvious that I had to get him to move in. Honestly, thank god he did, I was struggling to fill that area with stuff, and moving his house there really helped tie the aesthetic together. It's on the southeast part of my island btw. Check it out on the cool interactive map I made at snowcape.neocities.org.(Does it make sense to promote my website on my own website? idk)"],
-                ["Tangy","Cat","June 17th","Hairstylist","When the 3.0 update was anounced, I figured I'd log in a few days in advance to clean up my island in preparation of the update. It just so happened that there was a familiar face at the campsite that day. Tangy used to live in my town back on the 3ds, so her showing up felt like she wanted to come along for the ride and enjoy the update with me. Her moving in along with Tia and Zucker means I now have 3 food-themed villagers, but can you blame me? I really like the food designs:)"],
-                ["Ione","Squirrel","September 11th","Unknown","Ione is new in town, so I don't have a lot of memories with her yet. But she's great, right? HER TAIL IS SPACE. ALSO SHE GLOWS IN THE DARK. THATS INCREDIBLE. SHES SO COOL."],
+                ["Jørgen","Human","May 28th","Software Developer","rgb(186, 133, 211)","I still remember when I got into Animal crossing. Since I live in a small town in Norway, the closest video game store is a 2 hour bike ride away on the other side of a mountain. One summer day, I decided that I really wanted a new game for my 3ds, so I made the trip. There was this cool game called Animal Crossing: New Leaf on the shelf at Gamestop(this was back before Gamestop stopped operating in Norway, rip). Since then, I've put 300ish hours into New Leaf, as well as more than 1000 hours in New Horizons. I also got a Master's degree in informatics, but the job market is rough, so I'm doing data entry at an insurance firm for now. That's how I ended up making this website, actually. I needed to use my skills for something to not feel like I wasted 5 years of my life getting my degree. At least my education amounted to something I suppose. Shoutout to Eni for telling me about Neocities, I think this site is doing a pretty good job keeping me sane."],
+                ["Bam","Deer","November 7th","Soccer Player","rgb(9, 97, 246)","One of the original residents present at the founding of Snowcape, I'll always remember this guy. Problem is, your starting villagers get really generic empty houses, and the ability to change their house to their regular one didn't exist yet. Thus, Bam was stuck with a terrible looking house, and when he brought up moving I went along with it and let him go."],
+                ["Tammy","Bear Cub","June 23rd","Movie Director","rgb(255, 248, 13)","I still remember back in New Leaf when Tammy spontaneously came up to me and told me how much she appreciated me for being her friend. She used to live across the river from me, next to some perfect cherry trees. And then, when I got New Horizons and started my island, she was right there. After settling on a whole new island with me, she was eventually reunited with her old friend Tammi, and started a band. She's also great friends with old man Static, even if they sound like enemies sometimes. When crops were introduced to the game, I built a farm, and put it in her capable hands. I also have her amiibo because I obviously had to, she is pretty much the main character of Animal Crossing from my perspective. She's been there the whole time(except for 3 days when I moved her out and back in to reset her house). It's honestly hard to imagine her not being in my town. Also lmao I made her description twice the length of everyone else."],
+                ["Bangle","Tiger","August 27th","President","rgb(122, 37, 0)","While she didn't do anything super memorable on Snowcape back in 2020, Bangle was the first former villager to come by the hotel after the 3.0 update released. She still recognised me even after all these years, which was really nice."],
+                ["Nate","Bear","August 16th","Sumo Wrestler","rgb(232, 176, 16)","One of the key moments of Snowcape history is when I realized the superhero costume had an N on it, and worked with Nate's color scheme. On that day, Super Nate was born. He eventually moved out, but thanks to the Happy Home Paradise DLC, he is still hanging around in my game. He runs the café 'Seaside Snax' along with his friend Bones by day, and by night Super Nate works wiht his sidekick, Bone-Boy, solving crimes from their vacation home."],
+                ["Annalisa","Anteater","February 6th","Astronaut","rgb(255, 255, 255)","Annalisa was part of the early crowd on the island, but wasn't really that notable. I also wasn't taking that many screenshots back then, so she's on like one photo that isn't a big group one. She's still pretty cute though."],
+                ["Curlos","Sheep","May 8th","Actor","rgb(255, 208, 13)","If you've played New Horizons, you know that the tutorial features a villager moving in whether you like it or not. Yeah, that was Curlos. It's a lot easier to connect with villagers when you personally invite them to move in, at least for me. Due to that, I never really connected with Curlos. Nothing against the guy, he's pretty cute, but it just didn't click for me."],
+                ["Henry","Frog","September 21st","Writer","rgb(120, 221, 98)","My sister was watching while I was looking for villagers, and when I ran into this Henry guy, she insisted that I invite him to Snowcape. He eventually grew on me, and has lived on Snowcape ever since. I often catch him singing, and always stop to listen."],
+                ["Tipper","Cow","August 25th","Violinist","rgb(255, 255, 255)","Tipper hung around Snowcape for a while back in 2020, before eventually moving on to new places. After the Happy Home Paradise DLC came out, she's been running a farm at the archipelago, probably growing high quality vegetables."],
+                ["Tammi","Monkey","April 2nd","Artist","rgb(255, 208, 13)","Tammi and Tammy used to be best friends in my town in New Leaf, so when I ran into Tammi in New Horizons I knew I had to reunite them. I even set up a band for them, with a cool logo, merch and everything. While Tammi eventually moved away from Snowcape, her and Tammy still have a vacation home together, and TnT is still going strong."],
+                ["Fuchsia","Deer","September 19th","Makeup Artist","rgb(249, 147, 206)","When I ran into Fuchsia, I knew I had to invite her to Snowcape. Her color scheme was way too cool to pass up on. Sadly, as I kept building up Snowcape, I never really ended up building anything wild enough to match her energy. She eventually moved on to see the world, but she still has a vacation home at Paradise Planning that I visit sometimes."],
+                ["Bones","Dog","August 4th","Explorer","rgb(255, 255, 255)","Bones never really stood out all that much. He was just the lovable little guy that I liked seeing walk around my island. This became especially true after the Super Nate incident, which caused Bones to slip into the role of a Bone-Boy, Super Nate's sidekick. He's still hanging out with Nate in the Happy Home Paradise DLC, running a café by day and solving crimes by night."],
+                ["Fauna","Deer","March 26th","Teacher","rgb(122, 37, 0)","Durimg the time she lived on Snowcape, Fauna was probably one of my most photographed villagers. I mean, how could I not take pictures of her? She looks super cute pretty much no matter what she does. She eventually moved to my sister's island, where I've visited her several times. In more recent times, shes gotten herself a vacation home in the Happy Home Paradise DLC, and works as a chef alongside her assistant, Bettina."],
+                ["Marina","Octopus","June 26th","Pharmacist","rgb(249, 147, 206)","I invited Marina to my island because octopus villagers are pretty cool and unique. Then I met Zucker, who is an octopus and also a food villager, which I like because it's cool and unique. As the kids say, Marina got straight up Mogged. Sometimes I wish you could have more villagers on your island, cause Marina is quite cute despite being a mogging victim."],
+                ["Static","Squirrel","July 9th","Guitarist","rgb(160, 111, 206)","So, cool story about Static. I bought some villager amiibos on Etsy, so I could have amiibo of my favorite villagers. I also got a couple amiibo of villagers that I didn't have but thought looked cool. One of those was Static. Now guess who shows up at my campsite while I am waiting for the amiibo to arrive. This cool lil squirrel guy. At that point, I decided that it was destiny for him to live on my island, and he's stayed there ever since."],
+                ["Roald","Penguin","January 5th","Pro Golfer","rgb(25, 76, 137)","Roald was one of my sister's favorite villagers, but he never really clicked for me. He eventually left Snowcape to make space for new villagers, but he still runs a car repair shop over at the archipelago, and is happily spending his days fixing up cars."],
+                ["Zucker","Octopus","March 8th","Chef","rgb(228, 184, 135)","Buy his snacks please<br>Buy his snacks please...<br>Buy his snacks please!<br>For real though, I love this silly little guy. I built him a neat little café on the beach next to his house, and made his greeting into an ad for it. Very funny, love the guy, please visit Zucker's seaside snax."],
+                ["Willow","Sheep","November 26th","Designer","rgb(255, 249, 143)","I like Willow a lot. Pink clothes look very good on her. She's also always very nice to me. To be honest, I can't exactly describe why I never want her to leave Snowcape, I just know she's great and I never want her to leave. Even if the clothes she gifts me never work with my outfits."],
+                ["Melba","Koala","April 12th","Professor","rgb(228, 184, 135)","I always wanted to have a koala in my town back in New Leaf because their ears are very cool. Never found one though. But here, in New Horizons, I finally got my koala, and I couldn't be happier. Melba is the best and I love her."],
+                ["Reneigh","Horse","June 4th","Unknown","rgb(118, 73, 78)","I used to have a gang on the island, who wore skull tees and were known as the 'Bone Zone'. I mean, it all happened in my head because it's not an actual thing in the game, but they were really cool and hung out and did cool stuff(trust me). Reneigh was a key member of this crew, alongside Tammy, Static and Melba. She has since calmed down a bit, and is now a waiter at the restaurant 'Mom's Spaghetti' alongside her friend Renée"],
+                ["Carmen","Rabbit","January 6th","Movie Director","rgb(122, 37, 0)","They say absence makes the heart grow fonder, and I think Carmen confirms that. After she moved out the first time, I started to miss her, to the point where I got her amiibo to move her back in. She moved out again to make space for Ione, but it's all good because this was after the 3.0 update, where you can invite villagers to the hotel using their amiibo. She is now a permanent VIP at the Snowcape hotel."],
+                ["Mira","Rabbit","July 6th","Makeup Artist","rgb(255, 248, 13)","Sorry that the screenshot of Mira is just her in a tent, but she only lived on my island for a week, before Kid Cat showed up at my campsite. I really wanted him, but someone had to leave, and the fact that Mira also lives in my old town on my 3ds meant that she was the easiest one to let go to make space for KC. She's still doing great back in old Snowcape though."],
+                ["Kid Cat","Cat","August 1st","Superhero","rgb(255, 64, 64)","Kid Cat, or KC, came by to solve the totally real and not made up in my head crime wave caused by Super Nate moving away from Snowcape. He stayed around the island for a bit, but eventually left the now crime-free island of Snowcape to seek new adventures."],
+                ["Tia","Elephant","November 18th","Dentist","rgb(255, 255, 255)","I really like tea, which might be why Tia resonated with me so much. I even ended up building her a cute little café called Tia's tea garden. It's been pretty popular since the 3.0 update introduced tourists. I smile a bit every time I walk past and see someone sitting there enjoying some tea."],
+                ["Freya","Wolf","December 14th","Judge","rgb(255, 97, 131)","Freya used to live in my old New Leaf town as well, at least for a while. There's a reason I drew a suitcase for her signature. She moves into town, stays around for a few months, and then continues on her travels to see the world. Hopefully she will show up in my town whenever the next Animal crossing game comes out. She's a nice recurring character."],
+                ["Quinn","Eagle","January 20th","Unknown","rgb(217, 217, 255)","Ever the fashion icon, Quinn eventually got too big for the little town of Snowcape. With my help, she's now got a photo studio set up, and she spends her days designing outfits and doing fashion shoots."],
+                ["Kabuki","Cat","November 29th","Actor","rgb(255, 255, 255)","I already had a japanese themed area on my island, so when Kabuki showed up at the campsite it was pretty obvious that I had to get him to move in. Honestly, thank god he did, I was struggling to fill that area with stuff, and moving his house there really helped tie the aesthetic together. It's on the southeast part of my island btw. Check it out on the cool interactive map I made at snowcape.neocities.org.(Does it make sense to promote my website on my own website? idk)"],
+                ["Tangy","Cat","June 17th","Hairstylist","rgb(255, 208, 13)","When the 3.0 update was anounced, I figured I'd log in a few days in advance to clean up my island in preparation of the update. It just so happened that there was a familiar face at the campsite that day. Tangy used to live in my town back on the 3ds, so her showing up felt like she wanted to come along for the ride and enjoy the update with me. Her moving in along with Tia and Zucker means I now have 3 food-themed villagers, but can you blame me? I really like the food designs:)"],
+                ["Ione","Squirrel","September 11th","Unknown","rgb(139, 205, 234)","Ione is new in town, so I don't have a lot of memories with her yet. But she's great, right? HER TAIL IS SPACE. ALSO SHE GLOWS IN THE DARK. THATS INCREDIBLE. SHES SO COOL."],
             ]
-            profileswitch(vprofiles[15])
         </script>
         </body>
 </html>
