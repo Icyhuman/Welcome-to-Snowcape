@@ -65,13 +65,13 @@
                 <div class="posterw" style="top: 32px; left: 1073px;" onclick="profileswitch(28)"><p class="nametag" style="background-color: rgb(139, 205, 234);">Ione</p></div>
                 <div class="poster" style="bottom: 0px; left: 550px; height: 250px; width: 250px;" onclick="profileswitch(0)"><p class="nametag" style="background-color: rgb(186, 133, 211);">Jørgen</p></div>
             </div>
-            <img src="imgs/right.png" style="position: absolute; right: 0px; bottom: 0px;background-color: rgba(255,255,255,0.5);" onclick="teaarrows(1)">
-            <img src="imgs/left.png" style="position: absolute; left: 0px; bottom: 0px;background-color: rgba(255,255,255,0.5);" onclick="teaarrows(-1)">
+            <img class="arrow" src="imgs/right.png" style="position: absolute; right: 0px; bottom: 0px;background-color: rgba(255,255,255,0.5);" onclick="teaarrows(1)">
+            <img class="arrow" src="imgs/left.png" style="position: absolute; left: 0px; bottom: 0px;background-color: rgba(255,255,255,0.5);" onclick="teaarrows(-1)">
         
 
 
             <div id="Profbox" class="profbox">
-                    <img id="siggy" src="imgs/locals/Jørgensig.png" style="position: absolute; width: 75px; top: 10px;left: 10px;height: 75px;border-radius: 5px;z-index: 2;">
+                    <img class="siggy" id="siggy" src="imgs/locals/Jørgensig.png" style="position: absolute; width: 75px; top: 10px;left: 10px;height: 75px;border-radius: 5px;z-index: 2;">
                 <div style="position: absolute; background-color: whitesmoke; width: 300px; top: 10px;right: 10px;height: 70px;border-radius: 20px;align-content: center;">
                     <h1 id="Villagername" style="text-align: center;font-size: 50px; margin: 0px;">Villagername</h1>
                 </div>
@@ -87,13 +87,13 @@
                     <img src="imgs/dreamjob.png" style="position: absolute; height: 20px;margin: 0 auto; top: -5px; left: 0;right: 0;">
                     <p id="dreamjob" class="profiletext">Dream job</p>
                 </div>
-                    <img id="pfp" src="imgs/locals/Jørgenpfp.png" style="position: absolute;height: 200px; width: 200px;top: 85px; right: 10px; border-radius: 100px;">
-                    <img id="screenshot" src="imgs/locals/Jørgenss.jpg" style="position: absolute; width: 380px;aspect-ratio: 16/9; border-radius: 10px;bottom: 10px; right: 10px;z-index: 2;">
+                    <img class="pfp" id="pfp" src="imgs/locals/Jørgenpfp.png" style="position: absolute;height: 200px; width: 200px;top: 85px; right: 10px; border-radius: 100px;">
+                    <img class="screenshot" id="screenshot" src="imgs/locals/Jørgenss.jpg" style="position: absolute; width: 380px;aspect-ratio: 16/9; border-radius: 10px;bottom: 10px; right: 10px;z-index: 2;">
                 <div style="position: absolute;height: 197px; width: 380px; background-color: whitesmoke;top: 290px; right: 10px; border-radius: 10px;overflow-y: scroll;">
                     <p id="desc" style="margin-left: 5px;">this should never be visible. I am worried the javascript might be broken</p>
                 </div>
                 <div style="position: absolute; background-color: inherit; width: 60px;height: 60px;top: 0px;right: 400px;border-bottom-left-radius: 20px;">
-                    <img src="imgs/Xbtn.png" style="position: absolute; left: 5px; top: 5px; height: 50px; width: 50px;" onclick="profleave()">
+                    <img class="xbtn" src="imgs/Xbtn.png" style="position: absolute; left: 5px; top: 5px; height: 50px; width: 50px;" onclick="profleave()">
                 </div>
             </div>
         </div>

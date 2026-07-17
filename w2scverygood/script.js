@@ -12,12 +12,14 @@ function pinclick(pin, link){
     console.log('Displaying image: '+link)
     let box=document.getElementById("box")
     box.src=link
+    box.style.transformOrigin=pin.style.left+" "+pin.style.top
     box.style.display="block"
     pin.src="imgs/gpin.png"
 }
 function howbtn(link){
     console.log('Displaying image: '+link)
     let box=document.getElementById("box")
+    box.style.transformOrigin="1100px 50px"
     box.src=link
     box.style.display="block"
 }

@@ -3,7 +3,18 @@ body{
     background-color: rgb(20, 19, 18);
     background-repeat: no-repeat;
     background-size: 100%;
+    cursor: url(imgs/cursor.png), auto;
 }
+html{
+    cursor: url(imgs/cursor.png), auto;
+}
+.yapbar:hover, a:hover, .bup:hover, .babout:hover, .blink:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+p:not(.yext):hover{
+    cursor: url(imgs/cursort.png) 7 16, auto;
+}
+
 
 img.polaroid{
     width: 100%;
@@ -13,6 +24,7 @@ div.polaroid{
     position: absolute;
     width: 16vw;
     transition-duration: 0.5s;
+    z-index: 1;
 }
 div.map{
     transform: rotate(-12deg);
@@ -94,4 +106,32 @@ h3{
     margin-left: 1vw; 
     margin-right: 1vw;
     color: white;
+}
+
+.icecream{
+    position: absolute; top: 29vw; left: 27vw; width: 3vw; transform: rotate(21deg);
+}
+.window{
+    position: absolute; top: 24vw; left: 33vw; width: 6vw; 
+}
+.nes{
+    position: absolute; top: 25vw; left: 1vw; width: 2vw; transform: rotate(5deg);
+}
+.sip{
+    position: absolute; top: 15vw; left: 67vw; width: 3vw; transform: rotate(-5deg);
+}
+.scoot{
+    position: absolute; top: 16vw; left: 46vw; width: 3vw;
+}
+.tangy{
+    position: absolute; top: 15.5vw; left: 37vw; width: 2vw;
+}
+.roostcup{
+    position: absolute; top: 15.5vw; left: 93vw; width: 3vw;
+}
+.nooktreat{
+    position: absolute; top: 1.5vw; left: 85vw; width: 4vw; transform: rotate(-5deg);
+}
+.nookwrap{
+    position: absolute; top: 7vw; left: 87vw; width: 4vw; transform: rotate(15deg);
 }

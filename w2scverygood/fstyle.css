@@ -81,124 +81,13 @@ img.fashionicon{
     bottom: 5px;
 }
 
+.playbtn:hover, .leftbtn:hover, .rightbtn:hover, .fashionicon:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+
 
 
 
-div.barbra{
-    background-image: url("navbarwip/welcomer2.png");
-    position: absolute;
-    left: 0px;
-    width: 490px;
-    height: 165px;
-}
-div.barbrb{
-    background-image: url("navbarwip/mapr.png");
-    position: absolute;
-    left: 490px;
-    width: 145px;
-    height: 165px;
-}
-div.barbrb:hover{
-    background-image:url("navbarwip/mapbh.png");
-}
-div.barbrc{
-    background-image: url("navbarwip/fshr.png");
-    position: absolute;
-    left: 635px;
-    width: 163px;
-    height: 165px;
-}
-div.barbrc:hover{
-    background-image:url("navbarwip/fshbh.png");
-}
-div.barbrd{
-    background-image: url("navbarwip/tour.png");
-    position: absolute;
-    left: 798px;
-    width: 158px;
-    height: 165px;
-}
-div.barbrd:hover{
-    background-image:url("navbarwip/toubh.png");
-}
-div.barbre{
-    background-image: url("navbarwip/mtlr.png");
-    position: absolute;
-    left: 956px;
-    width: 158px;
-    height: 165px;
-}
-div.barbre:hover{
-    background-image:url("navbarwip/mtlbh.png");
-}
-div.barbrf{
-    background-image: url("navbarwip/cntr.png");
-    position: absolute;
-    left: 1114px;
-    width: 166px;
-    height: 165px;
-}
-div.barbrf:hover{
-    background-image:url("navbarwip/cntbh.png");
-}
-
-div.barbba{
-    background-image: url("navbarwip/welcomeb1.png");
-    position: absolute;
-    left: 0px;
-    width: 490px;
-    height: 165px;
-}
-div.barbbb{
-    background-image: url("navbarwip/mapb.png");
-    position: absolute;
-    left: 490px;
-    width: 145px;
-    height: 165px;
-}
-div.barbbb:hover{
-    background-image:url("navbarwip/mapbh.png");
-}
-div.barbbc{
-    background-image: url("navbarwip/fshb.png");
-    position: absolute;
-    left: 635px;
-    width: 163px;
-    height: 165px;
-}
-div.barbbc:hover{
-    background-image:url("navbarwip/fshbh.png");
-}
-div.barbbd{
-    background-image: url("navbarwip/toub.png");
-    position: absolute;
-    left: 798px;
-    width: 158px;
-    height: 165px;
-}
-div.barbbd:hover{
-    background-image:url("navbarwip/toubh.png");
-}
-div.barbbe{
-    background-image: url("navbarwip/mtlb.png");
-    position: absolute;
-    left: 956px;
-    width: 158px;
-    height: 165px;
-}
-div.barbbe:hover{
-    background-image:url("navbarwip/mtlbh.png");
-}
-div.barbbf{
-    background-image: url("navbarwip/cntb.png");
-    position: absolute;
-    left: 1114px;
-    width: 166px;
-    height: 165px;
-}
-div.barbbf:hover{
-    background-image:url("navbarwip/cntbh.png");
-}
 
 div.navbarab{
     background-image: url("navbarwip/welcomeb1.png");
