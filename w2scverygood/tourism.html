@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Snowcape - THE FUTURE</title>
+        <link rel="icon" href="imgs/flag.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <!-- Super duper copyright notice i dont care if you copy this code but if you do then 
+     shoutout to the original creator, Icyhuman. Check out my cool site at snowcape.neocities.org-->
+    <body>
+        <div class="navbarcont">
+            <a href="index.html"><div class="navbara"></div></a>
+            <a href="map.html"><div class="navbarb"></div></a>
+            <a href="fashion.html"><div class="navbarc"></div></a>
+            <a href="tourism.html"><div class="navbard"></div></a>
+            <a href="locals.html"><div class="navbare"></div></a>
+            <a href="contact.html"><div class="navbarf"></div></a>
+        </div>
+        <img src="imgs/TheFutureOfTourism.png" style="margin: auto;display: block;">
+        <p style="width: 939px;margin: auto;background-color: aliceblue;">Snowcape super techlabs is working hard to bring you the future of tourism with the brand new Cyber-brochure™. The future is here, the future is digital! The dotcom bubble will never pop! Stocks are going to rebound, trust me bro.<br>Sorry it might take a while. I keep getting too ambitious with this stuff. Also i keep getting distracted by pixel cliques because they are too fun lolmao</p>
+        <div style="height: 900px; width: 1400px;background-color: rgb(218, 201, 235); position: relative;">
+            <div class="cbpage cbr" style="background-color: rgb(196, 139, 204);">
+                <img src="imgs/tourism/fptext.png" style="width: 100%;">
+                <div style="height: 530px; width: 359px; position: absolute; bottom: 0px;">
+                    <div style="width: 359px;height: 171px;">
+                        <img src="imgs/tourism/Sbubble.png" style="position: absolute;">
+                        <h2 id="sbtext" style="position: absolute; top: 17px; left: 59px; height: 100px; width: 265px; margin-top: 0px;text-align: center;">You are now witnessing the future of tourism</h2>
+                    </div>
+                    <div style="height: 375px; width: 359px; position: absolute;bottom: 0px;">
+                        <div id="head" style="display: block;">
+                            <img src="imgs/tourism/Head.png" alt="" style="position: absolute;"></img>
+                            <img src="imgs/tourism/Yap.png" style="position: absolute;" class="yapp">
+                        </div>
+                        <img id="hair" src="imgs/tourism/Hair.png" alt="" style="position: absolute; display: block;">
+                        <img id="hat" src="imgs/tourism/Hat.png" alt="" style="position: absolute; display: block;">
+                        <img id="glasses" src="imgs/tourism/Glasses.png" alt="" style="position: absolute; display: block;">
+                    </div>
+                </div>
+                <div style="position: absolute;bottom: 0px;left: 360px;height: 150px;width: 40px;">
+                <button onclick="togglehair()" style="width: 70px;">Toggle Hair</button>
+                <button onclick="toggleglasses()" style="width: 70px;">Toggle Glasses</button>
+                <button onclick="togglehat()" style="width: 70px;">Toggle Hat</button>
+                <button onclick="togglehead()" style="width: 70px;">Toggle Head</button></div>
+                <h3 style="position: absolute; right: 5px; top: 360px; width: 300px;">I should put something cool in this area, but some idiot(me) decided to get way too ambitious when coming up with the idea for this section, so it might take a while.</h3>
+            <p style="position: absolute; right: 5px; bottom: 0px;">© Welcome to Snowcape 2001</p>
+            </div>
+        </div>
+    </body>
+    <script>
+        const head = document.getElementById("head")
+        const hair = document.getElementById("hair")
+        const hat = document.getElementById("hat")
+        const glasses = document.getElementById("glasses")
+        const sb = document.getElementById("sbtext")
+
+
+        function togglehead(){
+            if (head.style.display=="block"){head.style.display="none"}
+            else{head.style.display="block"}
+            settext()
+        }
+        function togglehair(){
+            if (hair.style.display=="block"){hair.style.display="none"}
+            else{hair.style.display="block"}
+            settext()
+        }
+        function togglehat(){
+            if (hat.style.display=="block"){hat.style.display="none"}
+            else{hat.style.display="block"}
+            settext()
+        }
+        function toggleglasses(){
+            if (glasses.style.display=="block"){glasses.style.display="none"}
+            else{glasses.style.display="block"}
+            settext()
+        }
+        function settext(){
+            if (head.style.display=="none" && hat.style.display=="none" && glasses.style.display=="none" && hair.style.display=="none"){sb.innerText="What have you done?! Bring me back please!"}
+            else if (head.style.display=="none"){sb.innerText="I have no mouth and I must promote Snowcape"}
+            else if (hat.style.display=="none"){sb.innerText="Oh no I am bald please dont look"}
+            else if (glasses.style.display=="none"){sb.innerText="Hey, I need my glasses to see"}
+            else if (hair.style.display=="none"){sb.innerText="noo, my beautiful hair:("}
+            else{sb.innerText="You are now witnessing the future of tourism"}
+        }
+    </script>
+</html>

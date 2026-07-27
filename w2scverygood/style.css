@@ -225,3 +225,38 @@ div.tearoomb{
 .xbtn:hover, .siggy:hover, .screenshot:hover, .pfp:hover, .arrow:hover{
     cursor: url(imgs/cursorh.png) 10 0, auto;
 }
+
+.cbpage{
+    width: 670px; height: 870px;
+    position: absolute;
+    top: 0px;
+    border-style: inset;
+    border-width: 15px;
+}
+.cbl{
+    left: 0px;
+}
+.cbr{
+    right: 0px;
+}
+@keyframes yappin{
+    0%{opacity: 0;}
+    0%{opacity: 1;}
+    12%{opacity: 1;}
+    12%{opacity: 0;}
+    27%{opacity: 0;}
+    27%{opacity: 1;}
+    33%{opacity: 1;}
+    33%{opacity: 0;}
+    56%{opacity: 0;}
+    56%{opacity: 1;}
+    78%{opacity: 1;}
+    78%{opacity: 0;}
+    92%{opacity: 0;}
+    92%{opacity: 1;}
+    100%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.yapp{
+    animation: yappin 2s linear forwards infinite;
+}
