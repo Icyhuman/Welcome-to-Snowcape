@@ -226,19 +226,7 @@ div.tearoomb{
     cursor: url(imgs/cursorh.png) 10 0, auto;
 }
 
-.cbpage{
-    width: 670px; height: 870px;
-    position: absolute;
-    top: 0px;
-    border-style: inset;
-    border-width: 15px;
-}
-.cbl{
-    left: 0px;
-}
-.cbr{
-    right: 0px;
-}
+/* Oioioi we be makin the brochure */
 @keyframes yappin{
     0%{opacity: 0;}
     0%{opacity: 1;}
@@ -259,4 +247,77 @@ div.tearoomb{
 }
 .yapp{
     animation: yappin 2s linear forwards infinite;
+}
+
+.navbtns{
+    border-radius: 2px;
+    border-style: outset;
+    border-left-color: rgb(240, 240, 240); border-top-color: rgb(240, 240, 240); border-right-color: rgb(82, 82, 82);border-bottom-color: rgb(82, 82, 82);
+    width: 120px; height: 22px;
+    bottom: 1px;
+    position: absolute;
+}
+.pcontent{
+    width: 678px; height: 844px;
+    left: 5px;
+    top: 20px;
+    position: absolute;
+    border-radius: 3px;
+    border-style: outset;
+    border-left-color: rgb(240, 240, 240); border-top-color: rgb(240, 240, 240); border-right-color: rgb(82, 82, 82);border-bottom-color: rgb(82, 82, 82);
+    z-index: 1;
+}
+.cbpage{
+    width: 694px; height: 894px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    border-radius: 3px;
+    border-style: outset;
+    border-left-color: rgb(240, 240, 240); border-top-color: rgb(240, 240, 240); border-right-color: rgb(82, 82, 82);border-bottom-color: rgb(82, 82, 82);
+    top: 0px;
+    z-index: 1;
+    display: none;
+}
+.cbl{
+    left: 0px;
+    transform-origin: 100%;
+}
+.cbla{
+    animation: lpager 4s linear forwards;
+    z-index: 2;
+}
+.cblb{
+    animation: lpagel 2s linear forwards;
+    z-index: 2;
+}
+.cbr{
+    right: 0px;
+    transform-origin: 0%;
+}
+.cbra{
+    z-index: 2;
+    animation: rpager 2s linear forwards;
+}
+.cbrb{
+    z-index: 2;
+    animation: rpagel 4s linear forwards;
+}
+
+@keyframes rpager{
+    0%{transform:  rotateY(0deg) skewy(0deg);}
+    100%{transform: rotateY(90deg)skewy(-10deg);}
+}
+@keyframes lpager{
+    0%{transform:  rotateY(-90deg) skewy(10deg);}
+    50%{transform:  rotateY(-90deg) skewy(10deg);}
+    100%{transform: rotateY(0deg)skewy(0deg);}
+}
+@keyframes lpagel{
+    0%{transform:  rotateY(0deg) skewy(0deg);}
+    100%{transform: rotateY(-90deg)skewy(10deg);}
+}
+@keyframes rpagel{
+    0%{transform:  rotateY(90deg) skewy(-10deg);}
+    50%{transform:  rotateY(90deg) skewy(-10deg);}
+    100%{transform: rotateY(0deg)skewy(0deg);}
 }

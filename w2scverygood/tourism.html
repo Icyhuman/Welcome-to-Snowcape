@@ -20,42 +20,133 @@
         </div>
         <img src="imgs/TheFutureOfTourism.png" style="margin: auto;display: block;">
         <p style="width: 939px;margin: auto;background-color: aliceblue;">Snowcape super techlabs is working hard to bring you the future of tourism with the brand new Cyber-brochure™. The future is here, the future is digital! The dotcom bubble will never pop! Stocks are going to rebound, trust me bro.<br>Sorry it might take a while. I keep getting too ambitious with this stuff. Also i keep getting distracted by pixel cliques because they are too fun lolmao</p>
-        <div style="height: 900px; width: 1400px;background-color: rgb(218, 201, 235); position: relative;">
-            <div class="cbpage cbr" style="background-color: rgb(196, 139, 204);">
-                <img src="imgs/tourism/fptext.png" style="width: 100%;">
-                <div style="height: 530px; width: 359px; position: absolute; bottom: 0px;">
-                    <div style="width: 359px;height: 171px;">
-                        <img src="imgs/tourism/Sbubble.png" style="position: absolute;">
-                        <h2 id="sbtext" style="position: absolute; top: 17px; left: 59px; height: 100px; width: 265px; margin-top: 0px;text-align: center;">You are now witnessing the future of tourism</h2>
-                    </div>
-                    <div style="height: 375px; width: 359px; position: absolute;bottom: 0px;">
-                        <div id="head" style="display: block;">
-                            <img src="imgs/tourism/Head.png" alt="" style="position: absolute;"></img>
-                            <img src="imgs/tourism/Yap.png" style="position: absolute;" class="yapp">
-                        </div>
-                        <img id="hair" src="imgs/tourism/Hair.png" alt="" style="position: absolute; display: block;">
-                        <img id="hat" src="imgs/tourism/Hat.png" alt="" style="position: absolute; display: block;">
-                        <img id="glasses" src="imgs/tourism/Glasses.png" alt="" style="position: absolute; display: block;">
-                    </div>
+        <div style="height: 900px; width: 1400px;background-color: rgb(218, 201, 235); position: relative; margin: auto;">
+            <div class="cbpage cbr " style="display: block;">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(0,0,0),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
                 </div>
-                <div style="position: absolute;bottom: 0px;left: 360px;height: 150px;width: 40px;">
-                <button onclick="togglehair()" style="width: 70px;">Toggle Hair</button>
-                <button onclick="toggleglasses()" style="width: 70px;">Toggle Glasses</button>
-                <button onclick="togglehat()" style="width: 70px;">Toggle Hat</button>
-                <button onclick="togglehead()" style="width: 70px;">Toggle Head</button></div>
-                <h3 style="position: absolute; right: 5px; top: 360px; width: 300px;">I should put something cool in this area, but some idiot(me) decided to get way too ambitious when coming up with the idea for this section, so it might take a while.</h3>
-            <p style="position: absolute; right: 5px; bottom: 0px;">© Welcome to Snowcape 2001</p>
+                    <button class="navbtns" style="right: 526px;">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;">Vacation Homes</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent">
+                <img src="imgs/tourism/fptext.png" style="width: 100%; position: absolute; top: 0px;">
+                    <div style="height: 530px; width: 359px; position: absolute; bottom: 0px;">
+                        <div style="width: 359px;height: 171px;">
+                            <img src="imgs/tourism/Sbubble.png" style="position: absolute;">
+                            <h2 id="sbtext" style="position: absolute; top: 17px; left: 59px; height: 100px; width: 265px; margin-top: 0px;text-align: center;">You are now witnessing the future of tourism</h2>
+                        </div>
+                        <div style="height: 375px; width: 359px; position: absolute;bottom: 0px;">
+                            <div id="head" style="display: block;">
+                                <img src="imgs/tourism/Head.png" alt="" style="position: absolute;"></img>
+                                <img src="imgs/tourism/Yap.png" style="position: absolute;" class="yapp">
+                            </div>
+                            <img id="hair" src="imgs/tourism/Hair.png" alt="" style="position: absolute; display: block;">
+                            <img id="hat" src="imgs/tourism/Hat.png" alt="" style="position: absolute; display: block;">
+                            <img id="glasses" src="imgs/tourism/Glasses.png" alt="" style="position: absolute; display: block;">
+                        </div>
+                    </div>
+                    <div style="position: absolute;bottom: 0px;left: 360px;height: 150px;width: 40px;">
+                        <button onclick="togglehair()" style="width: 70px;">Toggle Hair</button>
+                        <button onclick="toggleglasses()" style="width: 70px;">Toggle Glasses</button>
+                        <button onclick="togglehat()" style="width: 70px;">Toggle Hat</button>
+                        <button onclick="togglehead()" style="width: 70px;">Toggle Head</button></div>
+                <p style="position: absolute; right: 5px; bottom: 0px;">© Welcome to Snowcape 2001</p>
+                </div>
+            </div>
+            <div class="cbpage cbl">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;">Vacation Homes</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent" style="background-color: aquamarine;">
+                    <h1>Another page</h1>
+                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                </div>
+            </div>
+            <div class="cbpage cbr">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;">Vacation Homes</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent" style="background-color: aquamarine;">
+                    <h1>Another page</h1>
+                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                </div>
+            </div>
+                <div class="cbpage cbl">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;">Vacation Homes</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent" style="background-color: aquamarine;">
+                    <h1>more pages to test with</h1>
+                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                </div>
+            </div>
+            <div class="cbpage cbr">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;">Vacation Homes</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent" style="background-color: aquamarine;">
+                    <h1>Wow we are paging outta our minds here</h1>
+                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                </div>
+            </div>
+            <div class="cbpage cbl">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;">Vacation Homes</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent" style="background-color: aquamarine;">
+                    <h1>Back page</h1>
+                </div>
+            </div>
+            <div style="width: 266px;height: 400px;position: absolute; top: 337px; left: 1111px;z-index: 2;" id="OriginalCharacterDoNotSteal" onclick="helpfultip()">
+                <img src="imgs/tourism/paperclipOCdonotsteal.png">
+                <h5 style="position: absolute; left: 26px; top: 14px; width: 215px;margin: 0px;" id="Pcliptext">Hello, I am Clipbert the helpful and totally original paperclip. Click on me to receive helpful tips on how to use the new and excitingly different Cyber-Brochure™</h5>
             </div>
         </div>
     </body>
     <script>
+        //Head toggles
         const head = document.getElementById("head")
         const hair = document.getElementById("hair")
         const hat = document.getElementById("hat")
         const glasses = document.getElementById("glasses")
         const sb = document.getElementById("sbtext")
-
-
         function togglehead(){
             if (head.style.display=="block"){head.style.display="none"}
             else{head.style.display="block"}
@@ -83,6 +174,105 @@
             else if (glasses.style.display=="none"){sb.innerText="Hey, I need my glasses to see"}
             else if (hair.style.display=="none"){sb.innerText="noo, my beautiful hair:("}
             else{sb.innerText="You are now witnessing the future of tourism"}
+        }
+        //Original helpful paperclip code
+        const pclip=document.getElementById("OriginalCharacterDoNotSteal")
+        var cliptxt=document.getElementById("Pcliptext")
+        const helpfultips=["I am draggable!","There will be more tips when I actually make the brochure.","I am your friend!","Okay, the prototype page animations are looking fine, now I just gotta actually code page changes","If you do drugs, you go to hell before you die<br>-Super Mario","It would be pretty good if I figured out an upper bound for the length of these tips. As long as this thing does not overflow the speech bubble, it's all good. Okay, that worked, but my friend has a plugin that changes text to a more readable font, so that may cause issues for him. Aand I overflowed. Guess I've figured out the length limit then."]
+        function helpfultip(){
+            let ind = Math.floor(Math.random()*helpfultips.length);
+            cliptxt.innerHTML=helpfultips[ind]
+        }
+        //Dragging code
+        var cx = 0, cy = 0, mx = 0, my = 0; //X and Y for paperclip and mouse
+        pclip.onmousedown = startDrag;
+        function startDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            mx = e.clientX;
+            my = e.clientY;
+            document.onmouseup = endDrag;
+            document.onmousemove = mainDrag;
+        }
+        function mainDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            cx = mx - e.clientX;  //old mousepos minus new
+            cy = my - e.clientY;  //To get lenfth of move
+            mx = e.clientX; //update mousepos
+            my = e.clientY;
+            pclip.style.top = pclip.offsetTop - cy + "px"; //Move clip
+            pclip.style.left = pclip.offsetLeft - cx + "px";
+        }
+        function endDrag() {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+        function expandimg(image){
+            console.log(image.parentElement)
+            image.parentElement.parentElement.style.zIndex="3"
+            image.style.zIndex="3"
+            image.animate([
+                        { width: image.style.width, top: image.style.top,left: image.style.left },
+                        { width: '1280px', top: '75px', left: '49px' },
+                        { width: '1280px', top: '75px', left: '49px'  },
+                        { width: '1280px', top: '75px', left: '49px'  },
+                        { width: '1280px', top: '75px', left: '49px'  },
+                        { width: '1280px', top: '75px', left: '49px'  }
+                    ], {
+                        duration: 2500,
+                        iterations: 2,
+                        direction: "alternate"
+                    });
+                setTimeout(() => {image.style.zIndex="1";console.log(image);image.parentElement.parentElement.style.zIndex="1"},5000)
+        }
+        //Page turning
+        var pagenum=0
+        var pageblock=0
+        const lpages=document.getElementsByClassName("cbl")
+        const rpages=document.getElementsByClassName("cbr")
+
+        function nextpage(){
+            if(pageblock==0 && pagenum<rpages.length){
+            pageblock=1
+            let next=pagenum+1
+            rpages[pagenum].classList.add("cbra")
+            if(next<rpages.length){rpages[next].style.display="block"}
+            else{console.log(next);console.log(rpages.length)}
+            lpages[pagenum].classList.add("cbla")
+            lpages[pagenum].style.display="block"
+            setTimeout(() => {
+                rpages[pagenum].classList.remove("cbra");
+                rpages[pagenum].style.display="none"
+            },2000)
+            setTimeout(() => {
+                lpages[pagenum].classList.remove("cbla");
+                if(!pagenum<1){lpages[pagenum-1].style.display="none"}
+                pagenum=pagenum+1;
+                pageblock=0;
+            },4000)}
+            else{console.log("blocked lmao")}
+        }
+        function prevpage(){
+            if(pageblock==0 && pagenum>0){
+            pageblock=1
+            let prev=pagenum-1
+            rpages[prev].classList.add("cbrb")
+            rpages[prev].style.display="block"
+            lpages[prev].classList.add("cblb")
+            if(!prev<1){console.log(prev);
+                lpages[prev-1].style.display="block"}
+            setTimeout(() => {
+                lpages[prev].classList.remove("cblb");
+                lpages[prev].style.display="none"
+            },2000)
+            setTimeout(() => {
+                rpages[prev].classList.remove("cbrb");
+                if(pagenum<rpages.length){rpages[pagenum].style.display="none"}
+                pagenum=pagenum-1;
+                pageblock=0;
+            },4000)}
+            else{console.log("blocked lmao")}
         }
     </script>
 </html>
