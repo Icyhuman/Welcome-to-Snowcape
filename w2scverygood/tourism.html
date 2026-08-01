@@ -18,12 +18,11 @@
             <a href="locals.html"><div class="navbare"></div></a>
             <a href="contact.html"><div class="navbarf"></div></a>
         </div>
-        <img src="imgs/TheFutureOfTourism.png" style="margin: auto;display: block;">
-        <p style="width: 939px;margin: auto;background-color: aliceblue;">Snowcape super techlabs is working hard to bring you the future of tourism with the brand new Cyber-brochure™. The future is here, the future is digital! The dotcom bubble will never pop! Stocks are going to rebound, trust me bro.<br>Sorry it might take a while. I keep getting too ambitious with this stuff. Also i keep getting distracted by pixel cliques because they are too fun lolmao</p>
-        <div style="height: 900px; width: 1400px;background-color: rgb(218, 201, 235); position: relative; margin: auto;">
+        <div style="height: 900px; width: 1400px; position: relative; margin: auto;">
+            <!--FRONT PAGE OF BROCHURE-->
             <div class="cbpage cbr " style="display: block;">
-                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(0,0,0),rgb(216, 216, 216));">
-                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(44, 6, 75),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">The W2SC Cyber-Brochure™</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
                 </div>
                     <button class="navbtns" style="right: 526px;">Hotel</button>
@@ -49,16 +48,17 @@
                         </div>
                     </div>
                     <div style="position: absolute;bottom: 0px;left: 360px;height: 150px;width: 40px;">
-                        <button onclick="togglehair()" style="width: 70px;">Toggle Hair</button>
-                        <button onclick="toggleglasses()" style="width: 70px;">Toggle Glasses</button>
-                        <button onclick="togglehat()" style="width: 70px;">Toggle Hat</button>
-                        <button onclick="togglehead()" style="width: 70px;">Toggle Head</button></div>
+                        <button onclick="togglehair()" class="fpbtn">Toggle Hair</button>
+                        <button onclick="toggleglasses()" class="fpbtn">Toggle Glasses</button>
+                        <button onclick="togglehat()" class="fpbtn">Toggle Hat</button>
+                        <button onclick="togglehead()" class="fpbtn">Toggle Head</button></div>
                 <p style="position: absolute; right: 5px; bottom: 0px;">© Welcome to Snowcape 2001</p>
                 </div>
             </div>
+            <!--START OF HOTEL SECTION-->
             <div class="cbpage cbl">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
-                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">The Snowcape Hotel</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
                 </div>
                     <button class="navbtns" style="right: 526px;">Hotel</button>
@@ -66,15 +66,27 @@
                     <button class="navbtns" style="right: 266px;">Vacation Homes</button>
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
-                <div class="pcontent" style="background-color: aquamarine;">
-                    <h1>Another page</h1>
-                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
-                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                <div class="pcontent" style="background-color: rgb(160, 212, 255);">
+                    <!--Hotel intro-->
+                    <h1 style="margin-top: 5px;left: 5px;">Welcome to the Snowcape hotel!</h1>
+                    <h3 style="position: absolute; width: 330px; right: 5px; top: 65px; margin-top: 0px;">The Snowcape hotel is open for business! With 8 wonderful themed rooms, you 
+                        can feel comfortable here regardless of your needs! And if none of the rooms are to your taste, Snowcape's design specialist Jørgen can do custom VIP rooms!<br><br>Check in with Leliani at the reception, pick up some souvenirs from Grams, or just hang out with Leila in the lobby. Kapp'n also offers guided boat tours.
+                    </h3>
+                    <img src="imgs/tourism/scsh/2026061200364000_c.jpg" class="tourss" style="left: 5px; top: 60px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 245px;left: 10px;">Welcome to the lobby!</p>
+                    <img src="imgs/tourism/scsh/2026011418432500_c.jpg" class="tourss" style="left: 5px; top: 300px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 485px;left: 10px;">Grand opening!</p>
+                    <!--Seaside Room-->
+                    <h1 style="top: 530px; left: 5px;position: absolute;margin-top: 0px;">The ocean horizon</h1>
+                    <h3 style="position: absolute; width: 320px; right: 5px; top: 525px;">Kick back and enjoy the vista in the lovely Seaside room. Cold drinks included!</h3>
+                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" class="tourss" style="left: 350px; top: 630px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" class="tourss" style="left: 3px; top: 590px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style=" top: 775px;left: 10px;">Snack break</p>
                 </div>
             </div>
             <div class="cbpage cbr">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
-                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">The Snowcape Hotel</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
                 </div>
                     <button class="navbtns" style="right: 526px;">Hotel</button>
@@ -82,15 +94,30 @@
                     <button class="navbtns" style="right: 266px;">Vacation Homes</button>
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
-                <div class="pcontent" style="background-color: aquamarine;">
-                    <h1>Another page</h1>
-                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
-                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                <div class="pcontent" style="background-color: rgb(182, 147, 118);">
+                    <!--Japanese room-->
+                    <h1 style="margin-top: 5px;left: 5px;">The zen room</h1>
+                    <h3 style="position: absolute; width: 630px; right: 5px; top: 225px;">Find your inner zen in this beautiful japanese-inspired room!</h3>
+                    <img src="imgs/tourism/scsh/2026011616201200_c.jpg" class="tourss" style="left: 340px; top: 30px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011616150400_c.jpg" class="tourss" style="left: 3px; top: 60px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 215px;left: 330px;">Watchin' Godzill and chill :)</p>
+                    <!--Luxury ones-->
+                    <h1 style="top: 280px; left: 395px;position: absolute;margin-top: 0px;">Eastern elegance</h1>
+                    <img src="imgs/tourism/scsh/2026012023142200_c.jpg" class="tourss" style="left: 355px; top: 330px;" onclick="expandimg(this)">
+                    <h1 style="top: 510px; left: 415px;position: absolute;margin-top: 0px;">Luxury gallery</h1>
+                    <img src="imgs/tourism/scsh/2026012116355700_c.jpg" class="tourss" style="left: 355px; top: 560px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 740px;left: 360px;">Jørgen note: I don't like decorating with fancy luxury furniture, but the game gave me these themes so I had to make something</p>
+                    <!--Simple room-->
+                    <h1 style="position: absolute ;margin-top: 5px;left: 5px;top: 265px;">Simple sanctuary</h1>
+                    <h3 style="position: absolute; width: 330px; left: 5px; top: 485px;">Escape the complexity of life with this relaxing room. Relax completely with the gyroid massage.</h3>
+                    <img src="imgs/tourism/scsh/2026011711525400_c.jpg" class="tourss" style="left: 5px; top: 320px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026050214125500_c.jpg" class="tourss" style="left: 5px; top: 620px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 805px;left: 5px;">Shoutout to former Snowcape resident Freya</p>
                 </div>
             </div>
                 <div class="cbpage cbl">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
-                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">The Snowcape Hotel</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
                 </div>
                     <button class="navbtns" style="right: 526px;">Hotel</button>
@@ -98,15 +125,27 @@
                     <button class="navbtns" style="right: 266px;">Vacation Homes</button>
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
-                <div class="pcontent" style="background-color: aquamarine;">
-                    <h1>more pages to test with</h1>
-                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
-                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                <div class="pcontent" style="background-color: rgb(219, 254, 255);">
+                    <!--Alpine lodge room-->
+                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Alpine retreat</h1>
+                    <h3 style="position: absolute; width: 330px; left: 350px; top: 195px;margin: 0px;">Snowcape is beautiful during winter, and this room is the perfect place to warm up after exploring the island.</h3>
+                    <img src="imgs/tourism/scsh/2026011815065100_c.jpg" class="tourss" style="left: 5px; top: 50px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011923370600_c.jpg" class="tourss" style="left: 350px; top: 10px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011923375000_c.jpg" class="tourss" style="left: 350px; top: 320px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011923391000_c.jpg" class="tourss" style="left: 5px; top: 290px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 235px;left: 5px;width: 330px;">As a norwegian, I am the perfect guy to design a cabin</p>
+                    <p class="cbcomment" style="top: 475px;left: 25px;width: 330px;">Jørgen note: I love winter.</p>
+                    <!--Kid's Room-->
+                    <h1 style="top: 530px; left: 5px;position: absolute;margin-top: 0px;">The Kid's playroom</h1>
+                    <h3 style="position: absolute; width: 320px; right: 5px; top: 700px;">Split into two sections, the playroom is fun for kids of all ages!</h3>
+                    <img src="imgs/tourism/scsh/2026011813413300_c.jpg" class="tourss" style="left: 350px; top: 535px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011813420900_c.jpg" class="tourss" style="left: 5px; top: 590px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 775px;left: 10px;width: 330px;">The room even comes with homework, just in case you miss going to school</p>
                 </div>
             </div>
             <div class="cbpage cbr">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(7, 0, 107),rgb(216, 216, 216));">
-                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">This is where page name goes</p>
+                    <p style="color: aliceblue; margin-top: -3px; margin-left: 5px;">The Snowcape Hotel</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
                 </div>
                     <button class="navbtns" style="right: 526px;">Hotel</button>
@@ -114,10 +153,22 @@
                     <button class="navbtns" style="right: 266px;">Vacation Homes</button>
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
-                <div class="pcontent" style="background-color: aquamarine;">
-                    <h1>Wow we are paging outta our minds here</h1>
-                    <img src="imgs/tourism/scsh/2026011616120000_c.jpg" style="width: 60%; left: 113px; top: 571px;position: absolute;" onclick="expandimg(this)">
-                    <img src="imgs/tourism/scsh/2026011616121700_c.jpg" style="width: 140px; left: 23px; top: 211px;position: absolute;" onclick="expandimg(this)">
+                <div class="pcontent" style="background-color: rgb(255, 190, 190);">
+                    <!--Penthouse room-->
+                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">The penthouse</h1>
+                    <h3 style="position: absolute; width: 330px; left: 5px; top: 50px;margin: 0px;">Don't want to give up the modern style of the city during your vacation? We got you covered with the penthouse suite.</h3>
+                    <img src="imgs/tourism/scsh/2026011813464100_c.jpg" class="tourss" style="left: 350px; top: 10px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011813461800_c.jpg" class="tourss" style="left: 350px; top: 200px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011813465500_c.jpg" class="tourss" style="left: 350px; top: 390px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011813471500_c.jpg" class="tourss" style="left: 5px; top: 165px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011813484100_c.jpg" class="tourss" style="left: 350px; top: 630px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026011813481400_c.jpg" class="tourss" style="left: 5px; top: 425px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style="top: 350px;left: 10px;width: 330px;">Jørgen note: I already have a penthouse style room in my house, so doing a second take on the same concept was fun.</p>
+                    <p class="cbcomment" style="top: 580px;left: 355px;width: 320px;">Jørgen note: There are 7 candles in my room right now.</p>
+                    <p class="cbcomment" style="top: 815px;left: 370px;width: 330px;">Jørgen note: I like to make pasta</p>
+                    <!--Playroom overflow-->
+                    <img src="imgs/tourism/scsh/2026011813422200_c.jpg" class="tourss" style="left: 5px; top: 615px;" onclick="expandimg(this)">
+                    <p class="cbcomment" style=" top: 795px;left: 10px;width: 330px;">Oops, the playroom section overflowed into the next page</p>
                 </div>
             </div>
             <div class="cbpage cbl">
@@ -131,10 +182,11 @@
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
                 <div class="pcontent" style="background-color: aquamarine;">
-                    <h1>Back page</h1>
+                    <h1>I'll do the other sections eventually, but this was very tiring. Time for a break.</h1>
                 </div>
             </div>
-            <div style="width: 266px;height: 400px;position: absolute; top: 337px; left: 1111px;z-index: 2;" id="OriginalCharacterDoNotSteal" onclick="helpfultip()">
+            <!--LIL PAPERCLIP TYPE GUY-->
+            <div class="originalpaperclip" id="OriginalCharacterDoNotSteal" onclick="helpfultip()">
                 <img src="imgs/tourism/paperclipOCdonotsteal.png">
                 <h5 style="position: absolute; left: 26px; top: 14px; width: 215px;margin: 0px;" id="Pcliptext">Hello, I am Clipbert the helpful and totally original paperclip. Click on me to receive helpful tips on how to use the new and excitingly different Cyber-Brochure™</h5>
             </div>
@@ -178,7 +230,7 @@
         //Original helpful paperclip code
         const pclip=document.getElementById("OriginalCharacterDoNotSteal")
         var cliptxt=document.getElementById("Pcliptext")
-        const helpfultips=["I am draggable!","There will be more tips when I actually make the brochure.","I am your friend!","Okay, the prototype page animations are looking fine, now I just gotta actually code page changes","If you do drugs, you go to hell before you die<br>-Super Mario","It would be pretty good if I figured out an upper bound for the length of these tips. As long as this thing does not overflow the speech bubble, it's all good. Okay, that worked, but my friend has a plugin that changes text to a more readable font, so that may cause issues for him. Aand I overflowed. Guess I've figured out the length limit then."]
+        const helpfultips=["I am draggable!","The only navigation buttons that work are next page and previous page","I am your friend!","You can click the screenshots in the new and excitingly different Cyber-Brochure™ to expand them","The page changes used to have no cooldown. Everything broke lolmao","I made this in Firefox on a 1080p monitor. Oh god PLEASE let it not break on different browsers or resolutions","If you do drugs, you go to hell before you die<br>-Super Mario","It would be pretty good if I figured out an upper bound for the length of these tips. As long as this thing does not overflow the speech bubble, it's all good. Okay, that worked, but my friend has a plugin that changes text to a more readable font, so that may cause issues for him. Aand I overflowed. Guess I've figured out the length limit then."]
         function helpfultip(){
             let ind = Math.floor(Math.random()*helpfultips.length);
             cliptxt.innerHTML=helpfultips[ind]
@@ -212,6 +264,7 @@
             console.log(image.parentElement)
             image.parentElement.parentElement.style.zIndex="3"
             image.style.zIndex="3"
+            if(image.parentElement.parentElement.classList.contains("cbl")){
             image.animate([
                         { width: image.style.width, top: image.style.top,left: image.style.left },
                         { width: '1280px', top: '75px', left: '49px' },
@@ -220,11 +273,25 @@
                         { width: '1280px', top: '75px', left: '49px'  },
                         { width: '1280px', top: '75px', left: '49px'  }
                     ], {
-                        duration: 2500,
+                        duration: 2000,
+                        iterations: 2,
+                        direction: "alternate"
+                    });}
+            else{
+                image.animate([
+                        { width: image.style.width, top: image.style.top,left: image.style.left },
+                        { width: '1280px', top: '75px', left: '-651px' },
+                        { width: '1280px', top: '75px', left: '-651px'  },
+                        { width: '1280px', top: '75px', left: '-651px'  },
+                        { width: '1280px', top: '75px', left: '-651px'  },
+                        { width: '1280px', top: '75px', left: '-651px'  }
+                    ], {
+                        duration: 2000,
                         iterations: 2,
                         direction: "alternate"
                     });
-                setTimeout(() => {image.style.zIndex="1";console.log(image);image.parentElement.parentElement.style.zIndex="1"},5000)
+            }
+                setTimeout(() => {image.style.zIndex="1";console.log(image);image.parentElement.parentElement.style.removeProperty('z-index')},4000)
         }
         //Page turning
         var pagenum=0

@@ -248,7 +248,19 @@ div.tearoomb{
 .yapp{
     animation: yappin 2s linear forwards infinite;
 }
+.fpbtn{
+    width:70px;
+}
+.fpbtn:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
 
+.originalpaperclip{
+    width: 266px;height: 400px;position: absolute; top: 337px; left: 1111px;z-index: 2;
+}
+.originalpaperclip:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
 .navbtns{
     border-radius: 2px;
     border-style: outset;
@@ -256,6 +268,9 @@ div.tearoomb{
     width: 120px; height: 22px;
     bottom: 1px;
     position: absolute;
+}
+.navbtns:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
 }
 .pcontent{
     width: 678px; height: 844px;
@@ -320,4 +335,18 @@ div.tearoomb{
     0%{transform:  rotateY(90deg) skewy(-10deg);}
     50%{transform:  rotateY(90deg) skewy(-10deg);}
     100%{transform: rotateY(0deg)skewy(0deg);}
+}
+
+.tourss{
+    position: absolute; 
+    box-shadow: 0px 0px 10px rgb(41, 41, 41);
+    width: 320px;
+}
+.tourss:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+.cbcomment{
+    font-style: italic;
+    position: absolute;
+    margin-top: 0px;
 }
