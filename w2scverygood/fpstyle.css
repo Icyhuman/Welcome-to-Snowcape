@@ -144,3 +144,9 @@ h3{
 .polmini{
     position: absolute; top: 28vw; left: 32vw; width: 2.5vw; transform: rotate(-4deg);
 }
+.bbblend{
+    position: absolute; top: 21vw; left: 66vw; width: 3vw; transform: rotate(8deg);
+}
+.brc{
+    position: absolute; top: 2vw; left: 94vw; width: 4vw;
+}
