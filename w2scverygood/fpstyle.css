@@ -153,3 +153,12 @@ h3{
 .gyw{
     position: absolute; top: 32vw; left: 4vw; width: 4vw;
 }
+.mcake{
+    position: absolute; top: 36vw; left: 61vw; width: 4vw;
+}
+.starguy{
+    position: absolute; top: 36vw; left: 0vw; width: 3vw; transform: rotate(90deg);
+}
+.fishmans{
+    position: absolute; top: 19vw; left: 39vw; width: 5vw;
+}

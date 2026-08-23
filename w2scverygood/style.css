@@ -350,9 +350,20 @@ div.tearoomb{
     position: absolute;
     margin-top: 0px;
 }
-.museumbtn{
-    border-radius: 20px ;border-width: 2px; position: absolute; right: 2px; width: 220px; height: 65px; border-style: dashed;
+.bafter{
+    width: 640px; height: 370px; position: absolute;
 }
-.museumpagel, .museumpager{
-    width: 678px; height: 844px; position: relative;
+.bafterss{
+    position: absolute; left: 0px; top: 0px;grid-area: 1 / 1; width: 100%; display: block;
+}
+.slider{
+    position: absolute;width: 100%; bottom: 0px;
+}
+.review{
+    border-style: solid;border-width: 3px;border-radius: 10px; 
+    position: absolute;height: 150px;width: 300px;
+    border-color: black;background-color: blanchedalmond;
+}
+.reviewpfp{
+    position: absolute;width: 100px;border-top-left-radius: 7px;
 }

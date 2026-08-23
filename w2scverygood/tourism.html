@@ -182,13 +182,29 @@
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
                 <!--The museum-->
-                <div class="pcontent" style="background-color: aquamarine;">
-                    <div class="museumpagel">
-                        <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Learn at the Snowcape museum!</h1>
-                        <img src="imgs/tourism/scsh/2020032313042100_s.jpg" class="tourss" style="left: 5px; top: 65px; width: 640px;" onclick="expandimg(this)">
-                        <p class="cbcomment" style=" top: 795px;left: 10px;width: 330px;">Grand opening in March of 2020</p>
+                <div class="pcontent" style="background-color: rgb(125, 228, 56);">
+                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Learn at the Snowcape museum!</h1>
+                    <div class="bafter" style="top: 55px; left: 19px; display: grid;--pos: 50%">
+                        <img src="imgs/tourism/scsh/2026081522142400_c.jpg" class="bafterss">
+                        <img src="imgs/tourism/scsh/2020032313042100_s.jpg" class="bafterss" style="clip-path: inset(0 calc(100% - var(--pos)) 0 0);">
+                        <input class="slider" type="range" min="0" max="100" value="50">
                     </div>
-                    
+                    <p class="cbcomment" style=" top: 420px;left: 0px;width: 678px; text-align: center;">The Snowcape museum: Grand opening in March of 2020 versus today</p>
+                    <h3 style="position: absolute; width: 330px; left: 5px; top: 450px;margin: 0px;">Welcome to the Snowcape museum! The curator, Blathers, has put together several exciting exhibitions, such as ocean life, insects, art, and the ancient past. There's also a café.</h3>
+                    <img src="imgs/tourism/scsh/2026081522273900_c.jpg" class="tourss" style="left: 5px; top: 615px;" onclick="expandimg(this)">
+                    <div class="review" style="left: 350px;top: 450px;">
+                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
+                        <p style="position: absolute;margin: 0px;top: 100px;left: 5px; font-weight: bold;">Jørgen</p>
+                        <p style="position: absolute;margin: 0px;top: 5px;left: 105px;font-style: italic;">"In my highly unbiased opinion, I think this museum is the best, and I assume most of the things exhibited were donated by someone very handsome"</p>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/star.png);width: 100px;bottom: 0px;"></div>
+                    </div>
+                    <div class="review" style="left: 350px;top: 620px;">
+                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
+                        <p style="position: absolute;margin: 0px;top: 100px;left: 5px; font-weight: bold;">Jørgen</p>
+                        <p style="position: absolute;margin: 0px;top: 5px;left: 105px;font-style: italic;">"Not enough reviews"</p>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/star.png);width: 33px;bottom: 0px;"></div>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/badstar.png);width: 66px;bottom: 0px;left: 33px;"></div>
+                    </div>
                 </div>
             </div>
             <div class="cbpage cbr" style="display: block;">
@@ -202,20 +218,27 @@
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
                 <div class="pcontent" style="background-color: aquamarine;">
-                    <!--Navigation menu-->
-                    <div class="museumpager">
-                        <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Grab a coffee at the Roost</h1>
-                        <img src="imgs/tourism/scsh/2020032313042100_s.jpg" class="tourss" style="left: 5px; top: 65px; width: 640px;" onclick="expandimg(this)">
-                        <p class="cbcomment" style=" top: 795px;left: 10px;width: 330px;">Grand opening in March of 2020</p>
+                    <!--THE ROOST-->
+                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Grab a coffee at the Roost</h1>
+                    <img src="imgs/tourism/imgs/brewst.png" class="tourss" style="left: 15px; top: 400px; width: 300px; border-radius: 150px;">
+                    <p class="cbcomment" style=" top: 700px;left: 15px;width: 300px;text-align: center;">Brewster hard at work</p>
+                    <img src="imgs/tourism/scsh/2021123012554300_c.jpg" class="tourss" style="left: 345px; top: 445px;transform: rotate(5deg);" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2022072612353600_c.jpg" class="tourss" style="left: 325px; top: 515px;transform: rotate(15deg);" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026062100211700_c.jpg" class="tourss" style="left: 305px; top: 585px;transform: rotate(25deg);" onclick="expandimg(this)">
+                    <div class="review" style="left: 5px;top: 60px;">
+                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
+                        <p style="position: absolute;margin: 0px;top: 100px;left: 5px; font-weight: bold;">Jørgen</p>
+                        <p style="position: absolute;margin: 0px;top: 5px;left: 105px;font-style: italic;">"Have you been to the roost? I could use a review"</p>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/star.png);width: 33px;bottom: 0px;"></div>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/badstar.png);width: 66px;bottom: 0px;left: 33px;"></div>
                     </div>
-                    <div style="border-radius: 20px ;border-width: 5px; position: absolute; right: 5px; top: 5px; width: 228px; height: 357px; background-color: rgb(246, 248, 121); border-style: dashed;">
-                        <div class="museumbtn" style="top: 2px; background-color: rgb(182, 143, 71);"></div>
-                        <div class="museumbtn" style="top: 73px; background-color: rgb(182, 143, 71);"></div>
-                        <div class="museumbtn" style=" top: 144px; background-color: rgb(182, 143, 71);"></div>
-                        <div class="museumbtn" style=" top: 215px; background-color: rgb(182, 143, 71);"></div>
-                        <div class="museumbtn" style=" top: 286px; background-color: rgb(182, 143, 71);"></div>
+                    <div class="review" style="left: 10px;top: 230px;">
+                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
+                        <p style="position: absolute;margin: 0px;top: 100px;left: 5px; font-weight: bold;">Jørgen</p>
+                        <p style="position: absolute;margin: 0px;top: 5px;left: 105px;font-style: italic;">"I should probably get some reviews from people"</p>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/star.png);width: 33px;bottom: 0px;"></div>
+                        <div style="position: absolute;height: 31px;background-image: url(imgs/decor/badstar.png);width: 66px;bottom: 0px;left: 33px;"></div>
                     </div>
-                    
                 </div>
             </div>
             <div class="cbpage cbl">
@@ -314,11 +337,11 @@
             if(image.parentElement.parentElement.classList.contains("cbl")){
             image.animate([
                         { width: image.style.width, top: image.style.top,left: image.style.left },
-                        { width: '1280px', top: '75px', left: '49px' },
+                        { width: '1280px', top: '75px', left: '49px', transform: 'Rotate(0deg)' },
                         { width: '1280px', top: '75px', left: '49px'  },
                         { width: '1280px', top: '75px', left: '49px'  },
                         { width: '1280px', top: '75px', left: '49px'  },
-                        { width: '1280px', top: '75px', left: '49px'  }
+                        { width: '1280px', top: '75px', left: '49px', transform: 'Rotate(0deg)'  }
                     ], {
                         duration: 2000,
                         iterations: 2,
@@ -327,11 +350,11 @@
             else{
                 image.animate([
                         { width: image.style.width, top: image.style.top,left: image.style.left },
-                        { width: '1280px', top: '75px', left: '-651px' },
+                        { width: '1280px', top: '75px', left: '-651px', transform: 'Rotate(0deg)'  },
                         { width: '1280px', top: '75px', left: '-651px'  },
                         { width: '1280px', top: '75px', left: '-651px'  },
                         { width: '1280px', top: '75px', left: '-651px'  },
-                        { width: '1280px', top: '75px', left: '-651px'  }
+                        { width: '1280px', top: '75px', left: '-651px', transform: 'Rotate(0deg)'  }
                     ], {
                         duration: 2000,
                         iterations: 2,
@@ -388,5 +411,13 @@
             },4000)}
             else{console.log("blocked lmao")}
         }
+        //Before after museum
+        const slider = document.querySelector(".slider")
+        console.log(slider)
+        const bafter = document.querySelector(".bafter")
+        slider.addEventListener('input', () => {
+            console.log(slider.value)
+            bafter.style.setProperty('--pos', `${slider.value}%`);
+        });
     </script>
 </html>
