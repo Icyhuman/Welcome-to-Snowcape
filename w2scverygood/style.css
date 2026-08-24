@@ -367,3 +367,12 @@ div.tearoomb{
 .reviewpfp{
     position: absolute;width: 100px;border-top-left-radius: 7px;
 }
+.reviewn{
+    position: absolute;margin: 0px;top: 100px;left: 5px; font-weight: bold;
+}
+.reviewt{
+    position: absolute;margin: 0px;top: 5px;left: 105px;font-style: italic;
+}
+.menutext{
+    position: absolute;margin: 0px;font-family: cursive; color: rgb(255, 249, 240);
+}
