@@ -373,6 +373,12 @@ div.tearoomb{
 .reviewt{
     position: absolute;margin: 0px;top: 5px;left: 105px;font-style: italic;
 }
+.reviewgood{
+    position: absolute;height: 31px;background-image: url(imgs/decor/star.png);bottom: 0px;
+}
+.reviewbad{
+    position: absolute;height: 31px;background-image: url(imgs/decor/badstar.png);bottom: 0px;background-position: right;
+}
 .menutext{
     position: absolute;margin: 0px;font-family: cursive; color: rgb(255, 249, 240);
 }
