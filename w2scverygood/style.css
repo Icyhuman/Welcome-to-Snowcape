@@ -397,3 +397,6 @@ div.tearoomb{
     0%{transform:translateX(0px) rotate(-15deg);}
     100%{transform:translateX(100px) rotate(375deg);}
 }
+.warpbit{
+    height: 50px;width: 50px;background-color: rgb(199, 199, 199);z-index: 3;position: absolute;display: none;
+}

@@ -227,16 +227,16 @@
                     <img src="imgs/tourism/scsh/2022072612353600_c.jpg" class="tourss" style="left: 325px; top: 515px;transform: rotate(15deg);" onclick="expandimg(this)">
                     <img src="imgs/tourism/scsh/2026062100211700_c.jpg" class="tourss" style="left: 305px; top: 585px;transform: rotate(25deg);" onclick="expandimg(this)">
                     <div class="review" style="left: 5px;top: 60px;">
-                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
-                        <p class="reviewn">Jørgen</p>
-                        <p class="reviewt">"Have you been to the roost? I could use a review"</p>
-                        <div class="reviewgood" style="width: 33px;"></div>
-                        <div class="reviewbad" style="width: 66px;left: 33px;"></div>
+                        <img src="imgs/tourism/imgs/reviewsiri.png" class="reviewpfp">
+                        <p class="reviewn">Siri</p>
+                        <p class="reviewt">"Bra museum med en stor og fin utstilling. Kafeen er koselig, og man får alltid en god kopp kaffe"</p>
+                        <div class="reviewgood" style="width: 82px; background-image: url(imgs/tourism/imgs/starSiri.png);"></div>
+                        <div class="reviewbad" style="width: 17px;left: 82px;background-image: url(imgs/tourism/imgs/badstarSiri.png);"></div>
                     </div>
                     <div class="review" style="left: 10px;top: 230px;">
                         <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
                         <p class="reviewn">Jørgen</p>
-                        <p class="reviewt">"I should probably get some reviews from people"</p>
+                        <p class="reviewt">"Have you been to the roost? I could use a review"</p>
                         <div class="reviewgood" style="width: 33px;"></div>
                         <div class="reviewbad" style="width: 66px;left: 33px;"></div>
                     </div>
@@ -390,6 +390,26 @@
             <div class="originalpaperclip" id="OriginalCharacterDoNotSteal" onclick="helpfultip()">
                 <img src="imgs/tourism/paperclipOCdonotsteal.png">
                 <h5 style="position: absolute; left: 26px; top: 14px; width: 215px;margin: 0px;" id="Pcliptext">Hello, I am Clipbert the helpful and totally original paperclip. Click on me to receive helpful tips on how to use the new and excitingly different Cyber-Brochure™</h5>
+            </div>
+            <!--PAGE WARP-->
+            <div>
+                <div id="warpbox">
+                </div>
+                <div id="warpguy" style="position: absolute;display: none;z-index: 4;">
+                    <div style="width: 359px;height: 171px;position: absolute;top: 140px;left: 520px;">
+                            <img src="imgs/tourism/Sbubble.png" style="position: absolute;">
+                            <h1 id="sbtext" style="position: absolute; top: 17px; left: 59px; height: 100px; width: 265px; margin-top: 0px;text-align: center;">PAGE WARP!<br>WHEEEEEE!</h1>
+                        </div>
+                        <div id="warphead" style="height: 375px; width: 359px; position: absolute;top: 371px;left: 512px;transition-duration: 200ms;transform-origin: 50% 50%;scale: 0;">
+                            <div id="head" style="display: block;">
+                                <img src="imgs/tourism/Head.png" alt="" style="position: absolute;"></img>
+                                <img src="imgs/tourism/Yap.png" style="position: absolute;" class="yapp">
+                            </div>
+                            <img id="hair" src="imgs/tourism/Hair.png" alt="" style="position: absolute; display: block;">
+                            <img id="hat" src="imgs/tourism/Hat.png" alt="" style="position: absolute; display: block;">
+                            <img id="glasses" src="imgs/tourism/Glasses.png" alt="" style="position: absolute; display: block;">
+                        </div>
+                </div>
             </div>
         </div>
     </body>
@@ -552,15 +572,61 @@
         });
         function pwarp(pnum){
             if(pageblock==0){
+            setTimeout(() => {
+                if(pagenum<6){
                 console.log(pagenum)
-            if(pagenum<6){
-                console.log(pagenum)
-            rpages[pagenum].style.display="none"}
-            if(!pagenum==0){
-            lpages[pagenum-1].style.display="none"}
-            rpages[pnum].style.display="block"
-            lpages[pnum-1].style.display="block"
-            pagenum=pnum;
+                rpages[pagenum].style.display="none"}
+                if(!pagenum==0){
+                lpages[pagenum-1].style.display="none"}
+                rpages[pnum].style.display="block"
+                lpages[pnum-1].style.display="block"
+                pagenum=pnum;
+            },500)
+            console.log(warpbox.children)
+            for(let i = 0; i < warpbox.children.length; i++){
+                let time=Math.floor(Math.random()*500)
+                let color=Math.floor(Math.random()*60+190)
+                color=color-5*(Math.abs(i%18-9)) //Funny whacko math to make the edges darker, y axis
+                color=color-3*Math.abs(Math.floor(i/18)%28-14) //X axis, wacky math inside math cause lol it work
+                warpbox.children[i].style.backgroundColor="rgb("+color+","+color+","+color+")"
+                setTimeout(() => {
+                    warpbox.children[i].style.display="block"
+                },time)
+                time=Math.floor(Math.random()*500)
+                setTimeout(() => {
+                    warpbox.children[i].style.display="none"
+                },time+1500)
+
+            }
+            setTimeout(() => {
+                warphead.animate([
+                    { scale: 0, transform: 'Rotate(0deg)'},
+                    { scale: 1.5, transform: 'Rotate(360deg)' },
+                    { scale: 1.5, transform: 'Rotate(360deg)' }
+                ], {
+                    duration: 500,
+                    iterations: 2,
+                    direction: "alternate"
+                });
+                warpguy.style.display="block"
+            },500)
+            setTimeout(() => {
+                warphead.style.removeProperty("animation")
+                warpguy.style.display="none"
+            },1500)
+            }
+        }
+
+        const warpbox = document.getElementById("warpbox")
+        const warpguy = document.getElementById("warpguy")
+        const warphead = document.getElementById("warphead")
+        for(let i = 0; i < 28; i++){
+            for (let j = 0; j < 18; j++){
+                const newDiv = document.createElement("div");
+                newDiv.className="warpbit"
+                newDiv.style.left=i*50+"px";
+                newDiv.style.top=j*50+"px"
+                warpbox.appendChild(newDiv)
             }
         }
     </script>
