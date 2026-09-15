@@ -13,6 +13,18 @@ body{
 	font-style: normal; 
 	font-display: swap; 
 }
+@font-face { 
+    font-family: "zmg",serif;
+    src: url("./fonts/ZenMaruGothic-Medium.woff2") format("woff2"), 
+		url("./fonts/ZenMaruGothic-Medium.woff") format("woff"), 
+		url("./fonts/ZenMaruGothic-Medium.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 600;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "zmg";
+}
 
 a:hover {
     cursor: url(imgs/cursorh.png) 10 0, auto;

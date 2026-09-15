@@ -14,6 +14,18 @@ html{
 p:not(.yext):hover{
     cursor: url(imgs/cursort.png) 7 16, auto;
 }
+@font-face { 
+    font-family: "zmg",serif;
+    src: url("./fonts/ZenMaruGothic-Medium.woff2") format("woff2"), 
+		url("./fonts/ZenMaruGothic-Medium.woff") format("woff"), 
+		url("./fonts/ZenMaruGothic-Medium.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 600;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "zmg";
+}
 
 
 img.polaroid{
