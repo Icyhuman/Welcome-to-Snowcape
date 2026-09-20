@@ -412,3 +412,22 @@ div.tearoomb{
 .warpbit{
     height: 50px;width: 50px;background-color: rgb(199, 199, 199);z-index: 3;position: absolute;display: none;
 }
+.normieswitch{
+    position: absolute;bottom: 0px;right: 0px;height: 241px;width: 276px;
+}
+.normieswitch:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+.normieswitch:hover .normalguy{
+    filter: drop-shadow(0 0 15px rgb(60, 226, 255));
+}
+
+.scariswitch{
+    position: absolute;bottom: 0px;right: 0px;height: 300px;width: 146px;
+}
+.scariswitch:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+.scariswitch:hover .scariguy{
+    filter: drop-shadow(0 0 15px rgb(253, 191, 20));
+}

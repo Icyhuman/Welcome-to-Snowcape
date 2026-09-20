@@ -372,7 +372,7 @@
                     <img src="imgs/tourism/imgs/stare.png" class="tourss" style="left: 2px; top: 330px; width: 362px;">
                 </div>
             </div>
-            <div class="cbpage cbl" style="display: block;">
+            <div class="cbpage cbl">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(66, 3, 78),rgb(216, 216, 216));">
                     <p style="color: aliceblue; margin-top: 0px; margin-left: 5px;">Notable spots around Snowcape</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
@@ -383,7 +383,7 @@
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
                 <!--Plaza-->
-                <div class="pcontent normal" style="background-color: rgb(116, 181, 224);" style="display: none;">
+                <div class="pcontent normal" style="background-color: rgb(116, 181, 224); display: block;">
                     <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Welcome to the heart of Snowcape</h1>
                     <img src="imgs/tourism/scsh/2021110717353900_c.jpg" class="tourss" style="left: 10px; top: 45px;" onclick="expandimg(this)">
                     <img src="imgs/tourism/scsh/2020090410222800_s.jpg" class="tourss" style="left: 320px; top: 65px;" onclick="expandimg(this)">
@@ -398,7 +398,7 @@
                     <img src="imgs/tourism/scsh/2021123123251500_c.jpg" class="tourss" style="left: 40px; top: 445px;transform: rotate(-15deg);" onclick="expandimg(this)">
                     <p class="cbcomment" style=" top: 775px;left: 5px;">Jørgen note: <br>I have sensitive ears,<br> so I'm not super into fireworks irl</p>
                 </div>
-                <div class="pcontent scari" style="background-color: rgb(248, 168, 20);">
+                <div class="pcontent scari" style="background-color: rgb(248, 168, 20); display: none;">
                     <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Ignore all those other holidays, this is clearly the best one</h1>
                     <img src="imgs/tourism/scsh/2020103117423100_s.jpg" class="tourss" style="left: 340px; top: 55px;" onclick="expandimg(this)">
                     <p class="cbcomment" style=" top: 85px;left: 10px;width: 320px;">Jørgen note: Halloween was the first holiday in the game where I went all in. I got dressed up, added pumpkins all over the island, and set up a photoshoot with all my villagers in different costumes.<br>Good times:)</p>
@@ -411,15 +411,15 @@
                     <img src="imgs/tourism/scsh/2021100816501600_c.jpg" class="tourss" style="left: 10px; top: 475px;" onclick="expandimg(this)">
                     <img src="imgs/tourism/scsh/2021100822004900_c.jpg" class="tourss" style="left: 10px; top: 660px;" onclick="expandimg(this)">
                     <h3 style="position: absolute; width: 338px; left: 335px; top: 475px;margin: 0px;">Some people may ask why the plaza pages has a Halloween portion. Idk man but I like these photoshoots, and the Halloween guy is at the plaza sometimes. Let me have this one, ok?</h3>
-                    <div style="position: absolute;bottom: 0px;right: 0px;height: 241px;width: 276px;">
-                        <img src="imgs/tourism/imgs/firework.png" style="position: absolute;right: 0px;">
-                        <div style="position: absolute;bottom: 0px;right: 130px; width: 140px;height: 60px;background-color: rgb(116, 181, 224);border-style: solid;border-radius: 20px;">
+                    <div class="normieswitch" onclick="scariswap()">
+                        <img class="normalguy" src="imgs/tourism/imgs/firework.png" style="position: absolute;right: 0px;">
+                        <div class="normalbtn" style="position: absolute;bottom: 0px;right: 130px; width: 140px;height: 60px;background-color: rgb(116, 181, 224);border-style: solid;border-radius: 20px;">
                             <h3 style="text-align: center;position: absolute;margin: 0px;top: 5px;width: 100%;">Normal<br>mode</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cbpage cbr" style="display: block;">
+            <div class="cbpage cbr">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(66, 3, 78),rgb(216, 216, 216));">
                     <p style="color: aliceblue; margin-top: 0px; margin-left: 5px;">Notable spots around Snowcape</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
@@ -429,7 +429,7 @@
                     <button class="navbtns" style="right: 266px;" onclick="pwarp(3)">The Museum</button>
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
-                <div class="pcontent normal" style="background-color: rgb(116, 181, 224);">
+                <div class="pcontent normal" style="background-color: rgb(116, 181, 224); display: block;">
                     <!--Plaza 2-->
                     <h3 style="position: absolute; width: 340px; left: 5px; top: 5px;margin: 0px;">Viva Festivale!</h3>
                     <img src="imgs/tourism/scsh/2021021513451600_s.jpg" class="tourss" style="left: 5px; top: 35px;" onclick="expandimg(this)">
@@ -442,14 +442,14 @@
                     <img src="imgs/tourism/imgs/placeholder.jpg" class="tourss" style="left: 340px; top: 330px;transform: rotate(-360deg);" onclick="expandimg(this)">
                     <p class="cbcomment" style=" top: 280px;left: 345px;">Jørgen note: I suck at fishing compared to my sister:(</p>
                     <h3 style="position: absolute; width: 340px; right: 5px; top: 10px;margin: 0px;">Several fishing and bug catching contests are hosted throughout the year. Come test your skills!</h3>
-                    <div style="position: absolute;bottom: 0px;right: 0px;height: 300px;width: 146px;">
-                        <img src="imgs/tourism/imgs/scari.png">
-                        <div style="position: absolute;bottom: 0px;width: 140px;height: 60px;background-color: rgb(248, 168, 20);border-style: solid;border-radius: 20px;">
+                    <div class="scariswitch" onclick="scariswap()">
+                        <img class="scariguy" src="imgs/tourism/imgs/scari.png">
+                        <div class="scaribtn" style="position: absolute;bottom: 0px;width: 140px;height: 60px;background-color: rgb(248, 168, 20);border-style: solid;border-radius: 20px;">
                             <h3 style="text-align: center;position: absolute;margin: 0px;top: 5px;width: 100%;">~Scary~<br>mode</h3>
                         </div>
                     </div>
                 </div>
-                <div class="pcontent scari" style="background-color: rgb(248, 168, 20);">
+                <div class="pcontent scari" style="background-color: rgb(248, 168, 20); display: none;">
                     <h3 style="position: absolute; width: 338px; left: 5px; top: 5px;margin: 0px;">Halloween '26</h3>
                     <p class="cbcomment" style=" top: 8px;left: 160px;width: 520px;">Working on these pages got me inspired, so I did another shoot</p>
                     <img src="imgs/tourism/scsh/2026091223530000_c.jpg" class="tourss" style="left: 10px; top: 45px;" onclick="expandimg(this)">
@@ -462,6 +462,36 @@
                     <img src="imgs/tourism/scsh/2021120621092500_c.jpg" class="tourss" style="left: 355px; top: 515px;" onclick="expandimg(this)">
                     <img src="imgs/tourism/scsh/2022071512503000_c.jpg" class="tourss" style="left: 355px; top: 655px;" onclick="expandimg(this)">
                     <p class="cbcomment" style=" top: 666px;left: 10px;width: 340px;">Jørgen note: I refuse to accept this. How? Why? The laws of physics should forbid the Spot That Makes You Fly, yet here it is regardless. Taunting me. Tormenting me. Gleefully disregarding the laws of gravity. It vexes me. I must know why, yet I cannot. A cruel prank of the cosmos. I am wretched.</p>
+                </div>
+            </div>
+            <div class="cbpage cbl">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(66, 3, 78),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: 0px; margin-left: 5px;">Notable spots around Snowcape</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;" onclick="pwarp(1)">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;" onclick="pwarp(3)">The Museum</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <!--Plaza-->
+                <div class="pcontent normal" style="background-color: rgb(116, 181, 224); display: block;">
+                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Wowowowowowowowowowowowowoowowwowoowowowowowwowoowwowowowowo</h1>
+                </div>
+            </div>
+            <div class="cbpage cbr">
+                <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(66, 3, 78),rgb(216, 216, 216));">
+                    <p style="color: aliceblue; margin-top: 0px; margin-left: 5px;">Notable spots around Snowcape</p>
+                    <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
+                </div>
+                    <button class="navbtns" style="right: 526px;" onclick="pwarp(1)">Hotel</button>
+                    <button class="navbtns" style="right: 396px;">The Island</button>
+                    <button class="navbtns" style="right: 266px;" onclick="pwarp(3)">The Museum</button>
+                    <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
+                    <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
+                <div class="pcontent normal" style="background-color: rgb(116, 181, 224); display: block;">
+                    <!--Plaza 2-->
+                    <h3 style="position: absolute; width: 340px; left: 5px; top: 5px;margin: 0px;">If you laugh you die and go to hell</h3>
                 </div>
             </div>
             <div class="cbpage cbl">
@@ -719,6 +749,22 @@
                 newDiv.style.left=i*50+"px";
                 newDiv.style.top=j*50+"px"
                 warpbox.appendChild(newDiv)
+            }
+        }
+        const normies = document.getElementsByClassName("normal")
+        const scaries = document.getElementsByClassName("scari")
+        function scariswap (){
+            if(scaries[0].style.display=="block"){
+                scaries[0].style.display="none"
+                scaries[1].style.display="none"
+                normies[0].style.display="block"
+                normies[1].style.display="block"
+            }
+            else{
+                scaries[0].style.display="block"
+                scaries[1].style.display="block"
+                normies[0].style.display="none"
+                normies[1].style.display="none"
             }
         }
     </script>
