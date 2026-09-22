@@ -464,7 +464,7 @@
                     <p class="cbcomment" style=" top: 666px;left: 10px;width: 340px;">Jørgen note: I refuse to accept this. How? Why? The laws of physics should forbid the Spot That Makes You Fly, yet here it is regardless. Taunting me. Tormenting me. Gleefully disregarding the laws of gravity. It vexes me. I must know why, yet I cannot. A cruel prank of the cosmos. I am wretched.</p>
                 </div>
             </div>
-            <div class="cbpage cbl">
+            <div class="cbpage cbl" style="display: block;">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(66, 3, 78),rgb(216, 216, 216));">
                     <p style="color: aliceblue; margin-top: 0px; margin-left: 5px;">Notable spots around Snowcape</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
@@ -474,12 +474,36 @@
                     <button class="navbtns" style="right: 266px;" onclick="pwarp(3)">The Museum</button>
                     <button class="navbtns" style="right: 136px;" onclick="prevpage()">Previous Page</button>
                     <button class="navbtns" style="right: 6px;" onclick="nextpage()">Next Page</button>
-                <!--Plaza-->
-                <div class="pcontent normal" style="background-color: rgb(116, 181, 224); display: block;">
-                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Wowowowowowowowowowowowowoowowwowoowowowowowwowoowwowowowowo</h1>
+                <!--Tia's tea garden ttg zucker's seaside snax zss yes these are so i can ctrl+f the code-->
+                <div class="pcontent normal" style="background-color: rgb(209, 202, 188); display: block;">
+                    <h1 style="position: absolute ;margin-top: 0px;left: 5px;top: 0px;">Enjoy fantastic food!</h1>
+                    <h3 style="position: absolute; width: 343px; left: 10px; top: 45px;margin: 0px;">South of the plaza are 2 excellent cafés, Tia's Tea Garden and Zucker's Seaside Snax</h3>
+                    <p class="cbcomment" style=" top: 0px;left: 390px;width: 340px;">Zucker if you don't buy his snacks</p>
+                    <img src="imgs/tourism/scsh/2020071917054000_s.jpg" class="tourss" style="left: 355px; top: 25px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026062114172100_c.jpg" class="tourss" style="left: 15px; top: 130px;" onclick="expandimg(this)">
+                    <h3 style="position: absolute; width: 343px; left: 345px; top: 205px;margin: 0px;">Get some tea and cake at Tia's, or whatever Zucker felt like making today.</h3>
+                    <p class="cbcomment" style=" top: 255px;left: 410px;width: 250px;">I told Zucker to have a consistent menu but he won't listen</p>
+                    <img src="imgs/tourism/scsh/2021013118423800_s.jpg" class="tourss" style="left: 10px; top: 315px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026091222452800_c.jpg" class="tourss" style="left: 335px; top: 315px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026091316282700_c.jpg" class="tourss" style="left: 30px; top: 490px;" onclick="expandimg(this)">
+                    <img src="imgs/tourism/scsh/2026091316092400_c.jpg" class="tourss" style="left: 355px; top: 490px;" onclick="expandimg(this)">
+                    <div class="review" style="left: 15px;bottom: 5px;">
+                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
+                        <p class="reviewn">Jørgen</p>
+                        <p class="reviewt">"w2snowcape@gmail.com be a review in my cool brochure it will be cool i promise"</p>
+                        <div class="reviewgood" style="width: 66px;"></div>
+                        <div class="reviewbad" style="width: 33px;left: 66px;"></div>
+                    </div>
+                    <div class="review" style="right: 15px;bottom: 5px;">
+                        <img src="imgs/tourism/imgs/reviewj.png" class="reviewpfp">
+                        <p class="reviewn">Jørgen</p>
+                        <p class="reviewt">"I'll try to draw your character as the star rating guy and the pfp can link to your site please be on here"</p>
+                        <div class="reviewgood" style="width: 33px;"></div>
+                        <div class="reviewbad" style="width: 66px;left: 33px;"></div>
+                    </div>
                 </div>
             </div>
-            <div class="cbpage cbr">
+            <div class="cbpage cbr" style="display: block;">
                 <div style="width: 100%;height: 20px; position: absolute; top: 0px; background-image: linear-gradient(to right,rgb(66, 3, 78),rgb(216, 216, 216));">
                     <p style="color: aliceblue; margin-top: 0px; margin-left: 5px;">Notable spots around Snowcape</p>
                     <img src="imgs/tourism/Xbtn.png" style="position: absolute; right: 2px;top: 0px;">
@@ -695,8 +719,8 @@
         function pwarp(pnum){
             if(pageblock==0){
             setTimeout(() => {
-                if(pagenum<6){
-                console.log(pagenum)
+                console.log(rpages)
+                if(pagenum<rpages.length){
                 rpages[pagenum].style.display="none"}
                 if(!pagenum==0){
                 lpages[pagenum-1].style.display="none"}
