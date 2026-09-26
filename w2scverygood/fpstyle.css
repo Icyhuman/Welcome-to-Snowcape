@@ -1,5 +1,6 @@
 body{
     background-image: url(imgs/bgguy.jpg);
+    background-image: url(imgs/special/party.jpg);
     background-color: rgb(20, 19, 18);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -179,4 +180,7 @@ h3{
 }
 .ralts{
     position: absolute; top: 35vw; left: 29vw; width: 3vw;
+}
+img.dancer{
+    position: absolute; left: 120%; bottom: 0px;
 }

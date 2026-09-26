@@ -60,6 +60,7 @@
             <div id="updates" style="display: none;">
                 <p>You can follow me over at <a href="https://neocities.org/site/snowcape">my Neocities Profile</a> to find out whenever I update my site.</p>
                 <h3>Updates</h3>
+                <p>26/09-26: Added the last few pages to the brochure, and celebrated finishing all the content in the original plan for the site!</p>
                 <p>Ongoing/anytime: Making various pieces for pixel cliques whenever inspiration strikes.</p>
                 <p>4/09-26: The page warping in the brochure now has a fun animation. The last set of pages are still in the concept stage</p>
                 <p>1/09-26: Shoutout to my first guest review in the brochure!(hopefully first of many)</p>
@@ -140,5 +141,29 @@
             const blink=document.getElementById("blink")
             blink.addEventListener("click", (event) => {slinks()})
 
+            var danceindex=0
+            var dancers=["Henry","Ione","Jorgen","Kabuki","Melba","Static","Tammy","Tangy","Tia","Willow","Zucker"]
+
+            function spawndancer(){
+                var dancer=document.createElement("img")
+                dancer.src="imgs/special/"+dancers[danceindex]+"dance.gif"
+                dancer.className="dancer"
+                let dura=Math.random()+0.5
+                document.body.appendChild(dancer)
+                dancer.animate([
+                        { left: '120%' },
+                        { left: '-20%' }
+                    ], {
+                        duration: 4000*dura,
+                        iterations: 1,
+                    });
+                
+                
+                danceindex=danceindex+1
+                if(danceindex>10){danceindex=0; dancers.sort(() => Math.random()-0.5);console.log(dancers)}
+            }
+            setInterval(() => {
+                        spawndancer()
+                        }, 1500);
         </script>
 </html>
