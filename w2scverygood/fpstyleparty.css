@@ -1,5 +1,5 @@
 body{
-    background-image: url(imgs/bgguy.jpg);
+    background-image: url(imgs/special/party.jpg);
     background-color: rgb(20, 19, 18);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -34,13 +34,13 @@ img.polaroid{
 
 div.polaroid{
     position: absolute;
-    width: 16vw;
+    width: 12vw;
     transition-duration: 0.5s;
     z-index: 1;
 }
 div.map{
     transform: rotate(-12deg);
-    left: 70vw;
+    left: 80vw;
     top: 2vw;
 }
 div.map:hover{
@@ -56,8 +56,8 @@ div.fashion:hover{
 }
 div.tourism{
     transform: rotate(-12deg);
-    left: 65vw;
-    top: 26vw;
+    left: 73vw;
+    top: 19vw;
 }
 div.tourism:hover{
     transform: rotate(1deg);
@@ -72,8 +72,8 @@ div.locals:hover{
 }
 div.contact{
     transform: rotate(2deg);
-    left: 50vw;
-    top: 16vw;
+    left: 66vw;
+    top: 2vw;
 }
 div.contact:hover{
     transform: rotate(-7deg);
@@ -121,7 +121,7 @@ h3{
 }
 
 .icecream{
-    position: absolute; top: 29vw; left: 27vw; width: 3vw; transform: rotate(21deg);
+    position: absolute; top: 23vw; left: 27vw; width: 3vw; transform: rotate(90deg);
 }
 .window{
     position: absolute; top: 24vw; left: 33vw; width: 6vw; 
@@ -130,10 +130,10 @@ h3{
     position: absolute; top: 25vw; left: 1vw; width: 2vw; transform: rotate(5deg);
 }
 .sip{
-    position: absolute; top: 15vw; left: 67vw; width: 3vw; transform: rotate(-5deg);
+    position: absolute; top: 19vw; left: 62vw; width: 3vw; transform: rotate(-5deg);
 }
 .scoot{
-    position: absolute; top: 16vw; left: 46vw; width: 3vw;
+    position: absolute; top: 26vw; left: 41vw; width: 3vw;
 }
 .tangy{
     position: absolute; top: 15.5vw; left: 37vw; width: 2vw;
@@ -142,16 +142,16 @@ h3{
     position: absolute; top: 15.5vw; left: 93vw; width: 3vw;
 }
 .nooktreat{
-    position: absolute; top: 1.5vw; left: 85vw; width: 4vw; transform: rotate(-5deg);
+    position: absolute; top: 14vw; left: 56vw; width: 4vw; transform: rotate(-5deg);
 }
 .nookwrap{
-    position: absolute; top: 7vw; left: 87vw; width: 4vw; transform: rotate(15deg);
+    position: absolute; top: 22vw; left: 55vw; width: 4vw; transform: rotate(15deg);
 }
 .brewpill{
     position: absolute; top: 17vw; left: 35vw; width: 1.2vw; transform: rotate(-22deg);
 }
 .henry{
-    position: absolute; top: 28.5vw; left: 46vw; width: 3vw;
+    position: absolute; top: 15vw; left: 40vw; width: 3vw;
 }
 .polmini{
     position: absolute; top: 28vw; left: 32vw; width: 2.5vw; transform: rotate(-4deg);
@@ -166,7 +166,7 @@ h3{
     position: absolute; top: 32vw; left: 4vw; width: 4vw;
 }
 .mcake{
-    position: absolute; top: 36vw; left: 61vw; width: 4vw;
+    position: absolute; top: 8vw; left: 95vw; width: 4vw;
 }
 .starguy{
     position: absolute; top: 36vw; left: 0vw; width: 3vw; transform: rotate(90deg);
@@ -175,12 +175,15 @@ h3{
     position: absolute; top: 19vw; left: 39vw; width: 5vw;
 }
 .poison{
-    position: absolute; top: 39vw; left: 52vw; width: 5vw;
+    position: absolute; top: 25vw; left: 46vw; width: 5vw;
 }
 .ralts{
-    position: absolute; top: 35vw; left: 29vw; width: 3vw;
+    position: absolute; top: 37vw; left: 30vw; width: 3vw;
 }
-
+img.dancer{
+    position: absolute; left: 120%; bottom: 0px;
+    max-height: 30vh;
+}
 
 
 /*Text size adjuster*/

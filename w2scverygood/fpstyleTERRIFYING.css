@@ -1,5 +1,5 @@
 body{
-    background-image: url(imgs/bgguy.jpg);
+    background-image: url(imgs/bgTERRIFYING.jpg);
     background-color: rgb(20, 19, 18);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -92,27 +92,30 @@ div.yapbar{
     display: flex; position: sticky;top: 0;
 }
 div.babout{
-    width: 33%; height: 30px;background-color: rgb(17, 73, 122); align-items: center;transition-duration: 0.5s;
+    width: 33%; height: 30px;background-color: rgb(219, 123, 14); align-items: center;transition-duration: 0.5s;
 }
 div.babout:hover{
-    background-color: rgb(72, 21, 139);
+    background-color: rgb(146, 78, 0);
 }
 div.bup{
-    width: 34%; height: 30px;background-color: rgb(9, 56, 97); align-items: center;transition-duration: 0.5s;
+    width: 34%; height: 30px;background-color: rgb(196, 104, 0); align-items: center;transition-duration: 0.5s;
 }
 div.bup:hover{
-    background-color: rgb(47, 10, 97);
+    background-color: rgb(95, 60, 6);
 }
 div.blink{
-    width: 33%; height: 30px;background-color: rgb(17, 73, 122); align-items: center; transition-duration: 0.5s;
+    width: 33%; height: 30px;background-color: rgb(219, 123, 14); align-items: center; transition-duration: 0.5s;
 }
 div.blink:hover{
-    background-color: rgb(72, 21, 139);
+    background-color: rgb(146, 78, 0);
 }
 p{
     margin-left: 1vw; 
     margin-right: 1vw;
     color: white;
+}
+p.yext{
+    color: black;
 }
 h3{
     margin-left: 1vw; 
@@ -124,7 +127,7 @@ h3{
     position: absolute; top: 29vw; left: 27vw; width: 3vw; transform: rotate(21deg);
 }
 .window{
-    position: absolute; top: 24vw; left: 33vw; width: 6vw; 
+    position: absolute; top: 40vw; left: 93vw; width: 6vw; 
 }
 .nes{
     position: absolute; top: 25vw; left: 1vw; width: 2vw; transform: rotate(5deg);
@@ -139,7 +142,7 @@ h3{
     position: absolute; top: 15.5vw; left: 37vw; width: 2vw;
 }
 .roostcup{
-    position: absolute; top: 15.5vw; left: 93vw; width: 3vw;
+    position: absolute; top: 11.5vw; left: 93vw; width: 3vw;transform: rotate(-15deg);
 }
 .nooktreat{
     position: absolute; top: 1.5vw; left: 85vw; width: 4vw; transform: rotate(-5deg);
@@ -148,13 +151,13 @@ h3{
     position: absolute; top: 7vw; left: 87vw; width: 4vw; transform: rotate(15deg);
 }
 .brewpill{
-    position: absolute; top: 17vw; left: 35vw; width: 1.2vw; transform: rotate(-22deg);
+    position: absolute; top: 17vw; left: 44vw; width: 1.2vw; transform: rotate(-22deg);
 }
 .henry{
-    position: absolute; top: 28.5vw; left: 46vw; width: 3vw;
+    position: absolute; top: 27.5vw; left: 45vw; width: 3vw;
 }
 .polmini{
-    position: absolute; top: 28vw; left: 32vw; width: 2.5vw; transform: rotate(-4deg);
+    position: absolute; top: 29vw; left: 36vw; width: 2.5vw; transform: rotate(-4deg);
 }
 .bbblend{
     position: absolute; top: 21vw; left: 66vw; width: 3vw; transform: rotate(8deg);
@@ -166,16 +169,16 @@ h3{
     position: absolute; top: 32vw; left: 4vw; width: 4vw;
 }
 .mcake{
-    position: absolute; top: 36vw; left: 61vw; width: 4vw;
+    position: absolute; top: 38vw; left: 5vw; width: 4vw;
 }
 .starguy{
     position: absolute; top: 36vw; left: 0vw; width: 3vw; transform: rotate(90deg);
 }
 .fishmans{
-    position: absolute; top: 19vw; left: 39vw; width: 5vw;
+    position: absolute; top: 21.5vw; left: 43vw; width: 5vw;
 }
 .poison{
-    position: absolute; top: 39vw; left: 52vw; width: 5vw;
+    position: absolute; top: 39vw; left: 36vw; width: 5vw;
 }
 .ralts{
     position: absolute; top: 35vw; left: 29vw; width: 3vw;

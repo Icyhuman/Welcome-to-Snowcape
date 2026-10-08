@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <title>Welcome to Snowcape</title>
         <link rel="icon" href="imgs/flag.png">
-        <link rel="stylesheet" type="text/css" href="fpstyle.css">
+        <!--<link rel="stylesheet" type="text/css" href="fpstyle.css">-->
+        <link rel="stylesheet" type="text/css" href="fpstyleTERRIFYING.css">
         <script src="script.js"></script>
         <link rel="stylesheet" href="https://cdring.neocities.org/cdring/onionring.css">
     </head>
@@ -44,24 +45,26 @@
             </div>
             <div id="about">
                 <h3>Welcome to my site!</h3>
-                <h3><a href="tempblog.html">Temporary blog here</a></h3>
+                <h3><a href="tempblog.html" style="color: aqua;">Temporary blog here</a></h3>
                 <p>
                     Hey! I'm Jørgen(aka Icyhuman), and this is my website, Welcome To Snowcape. The site started as an interactive map I made to show off my 
                     Animal Crossing island to my friends, and eventually grew into whatever this is.
                 </p>
-                <p>I'm a mildly autistic late twentysomething with a tech degree, who fell a few years behind in life due to <a href="buriedthoughts.html" style="text-decoration: inherit; color: rgb(231, 231, 231); background-color: rgba(0,0,0,0.2);">depression</a> and ended up graduating after AI turned the job market into super hell. 
+                <p>I'm a mildly autistic late twentysomething with a tech degree, who fell a few years behind in life due to depression and ended up graduating after AI turned the job market into super hell. 
                     With job hunting being borderline impossible, I needed to use my coding skills for something, and ended up gravitating towards web development.
                 </p>
                 <p>A lot of people my age write about how they grew up on the old internet and miss it. I don't know, I explored the internet until I found flash games, and then I didn't really need to explore anymore because Fancy Pants Adventure was awesome:)
                 </p>
-                <p>There should be another meaningful paragraph here where I make some sort of point, but I'm kinda stuck on how to make whatever point I was gonna make. I think I was gonna talk about other stuff I like, but I accidentally themed my entire site around one of my interests. Whatever. I've been playing Rune Factory 4 Special on my switch. Very good, would recommend. Also listen to Long Season by Fishmans.</p>
-                <p>Anyways, sorry for rambling, I am prone to doing that. Please enjoy the site!</p>
+                <p>There should be another meaningful paragraph here where I make some sort of point, but I'm kinda stuck on how to make whatever point I was gonna make. I think I was gonna talk about other stuff I like, but I accidentally themed my entire site around one of my interests. Whatever. I've been playing Fire Emblem Fortune's Weave on my switch. Very good, would recommend. Also listen to Long Season by Fishmans.</p>
+                <p>Anyways, sorry for rambling, I have to do it here because I forgot the 'personal' part of 'personal website', so I don't have anywhere else to write about stuff I like. I should make that sometime. Anyway, please enjoy the site!</p>
             </div>
             <div id="updates" style="display: none;">
                 <p>You can follow me over at <a href="https://neocities.org/site/snowcape">my Neocities Profile</a> to find out whenever I update my site.</p>
                 <h3>Updates</h3>
-                <p>26/09-26: Added the last few pages to the brochure, and celebrated finishing all the content in the original plan for the site!</p>
                 <p>Ongoing/anytime: Making various pieces for pixel cliques whenever inspiration strikes.</p>
+                <p>08/10-26: Changed the front page to something scarier for October</p>
+                <p>05/10-26: Added a text size changer due to text rendering on Linux being different, making my site not match my intended vision</p>
+                <p>26/09-26: Added the last few pages to the brochure, and celebrated finishing all the content in the original plan for the site!</p>
                 <p>4/09-26: The page warping in the brochure now has a fun animation. The last set of pages are still in the concept stage</p>
                 <p>1/09-26: Shoutout to my first guest review in the brochure!(hopefully first of many)</p>
                 <p>27/08-26: Made the museum section for the brochure, and added functionality to the page jump buttons.</p>
@@ -114,6 +117,8 @@
             </div>
         </div>
         <div style="position: fixed;width: 100%;height: 100%;z-index: -1;"></div>
+        <!--Text size tool-->
+        <script src="fonts/tsscript.js"></script>
         </body>
         <script>
             const about=document.getElementById("about")
@@ -141,7 +146,8 @@
             const blink=document.getElementById("blink")
             blink.addEventListener("click", (event) => {slinks()})
 
-            var danceindex=0
+            //Party code
+            /*var danceindex=0
             var dancers=["Henry","Ione","Jorgen","Kabuki","Melba","Static","Tammy","Tangy","Tia","Willow","Zucker"]
 
             function spawndancer(){
@@ -151,19 +157,21 @@
                 let dura=Math.random()+0.5
                 document.body.appendChild(dancer)
                 dancer.animate([
-                        { left: '120%' },
+                        { left: '100%' },
                         { left: '-20%' }
                     ], {
                         duration: 4000*dura,
                         iterations: 1,
                     });
-                
+                setTimeout(() => {
+                    dancer.remove()
+                }, 4000*dura);
                 
                 danceindex=danceindex+1
                 if(danceindex>10){danceindex=0; dancers.sort(() => Math.random()-0.5);console.log(dancers)}
             }
             setInterval(() => {
                         spawndancer()
-                        }, 1500);
+                        }, 1500);*/
         </script>
 </html>

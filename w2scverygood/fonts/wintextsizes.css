@@ -1,0 +1,30 @@
+h1{
+    font-size: 38px;
+}
+h2{
+    font-size: 29px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 20px; 
+}
+h5{
+    font-size: 16px;
+}
+p{
+    font-size: 18px;
+}
+h1.fashionhead{
+    font-size: 50px;
+}
+p.fashiondesc{
+    font-size: 24px;
+}
+p.nametag{
+    font-size: 28px;
+}
+h1.villagername{
+    font-size: 60px;
+}
