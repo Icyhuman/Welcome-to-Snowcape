@@ -1,7 +1,39 @@
 body{
-    background-image: url(imgs/bg.png);
-    animation: bganim 10s linear forwards infinite;
+    /*background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
+    animation: bganim 10s linear forwards infinite;*/
     cursor: url(imgs/cursor.png), auto;
+}
+.bgbox{
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+.bgsnowc{
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: -10vw;
+    animation: snowfall 5s linear infinite;
+}
+.bgsnow{
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: 0vw;
+    animation: snowsway 3s ease-in-out infinite;
+}
+@keyframes snowfall{
+    0%{transform: translateY(0vh);}
+    100%{transform: translateY(100vh) translateY(10vw);}
+}
+@keyframes snowsway{
+    0%{transform: translateX(0vw);}
+    50%{transform: translateX(19vw);}
+    100%{transform: translateX(0vw);}
 }
 
 @font-face { 
