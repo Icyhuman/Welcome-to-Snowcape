@@ -438,7 +438,7 @@ div.tearoomb{
 
 /*Text size adjuster*/
 .tsbox{
-    position: fixed; left: 0px; bottom: 10px; width: fit-content;height: fit-content;display: flex; z-index: 3;
+    position: fixed; left: 0px; bottom: 10px; width: fit-content;height: fit-content;display: flex; z-index: 9;
 }
 .tsabox{
     position: relative;width: fit-content;height: 40px;background-color: antiquewhite;border: 2px solid black;opacity: 0.25;
