@@ -76,19 +76,3 @@ if(localStorage.getItem("lintxt")==1){
 if(localStorage.getItem("bhide")==1){
     tsvis()
 }else{console.log("no")}
-
-
-//Background snow effect
-const bgbox = document.createElement("div")
-bgbox.classList.add("bgbox")
-document.body.append(bgbox)
-console.log(bgbox)
-function snow(){
-    var flbox = document.createElement("div")
-    flbox.classList.add("bgsnowc")
-    bgbox.append(flbox)
-    var flake = document.createElement("img")
-    flake.classList.add("bgsnow")
-    flbox.append(flake)
-    flake.src="imgs/bg.png"
-}

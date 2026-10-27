@@ -3,38 +3,7 @@ body{
     animation: bganim 10s linear forwards infinite;*/
     cursor: url(imgs/cursor.png), auto;
 }
-.bgbox{
-    position: fixed;
-    background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
-    left: 0%;
-    top: 0%;
-    width: 100vw;
-    height: 100vh;
-    z-index: -5;
-}
-.bgsnowc{
-    width: 10vw;
-    height: 10vw;
-    position: absolute;
-    top: -10vw;
-    animation: snowfall 5s linear infinite;
-}
-.bgsnow{
-    width: 10vw;
-    height: 10vw;
-    position: absolute;
-    top: 0vw;
-    animation: snowsway 3s ease-in-out infinite;
-}
-@keyframes snowfall{
-    0%{transform: translateY(0vh);}
-    100%{transform: translateY(100vh) translateY(10vw);}
-}
-@keyframes snowsway{
-    0%{transform: translateX(0vw);}
-    50%{transform: translateX(19vw);}
-    100%{transform: translateX(0vw);}
-}
+
 
 @font-face { 
 	font-family: "cursiveserif"; 
@@ -469,7 +438,7 @@ div.tearoomb{
 
 /*Text size adjuster*/
 .tsbox{
-    position: fixed; left: 0px; bottom: 10px; width: fit-content;height: fit-content;display: flex;
+    position: fixed; left: 0px; bottom: 10px; width: fit-content;height: fit-content;display: flex; z-index: 3;
 }
 .tsabox{
     position: relative;width: fit-content;height: 40px;background-color: antiquewhite;border: 2px solid black;opacity: 0.25;
@@ -485,4 +454,39 @@ position: absolute; left: 100%;bottom: 0px; width: 300px; background-color: blan
 }
 .tshover:hover .tsxplain{
     visibility: visible;
+}
+
+/*Background snow style*/
+.bgbox{
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+.bgsnowc{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: -5vw;
+    animation: snowfall 5s linear infinite;
+}
+.bgsnow{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 0vw;
+    animation: snowsway 3s ease-in-out infinite;
+    image-rendering: pixelated;
+}
+@keyframes snowfall{
+    0%{transform: translateY(0vh);}
+    100%{transform: translateY(100vh) translateY(10vw);}
+}
+@keyframes snowsway{
+    0%{transform: translateX(0vw);}
+    50%{transform: translateX(19vw);}
+    100%{transform: translateX(0vw);}
 }
