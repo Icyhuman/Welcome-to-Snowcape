@@ -1,5 +1,5 @@
 //Background snow effect
-const flakes=["shine.png","ihsc.png","rlphb.png","slash.png"]
+const flakes=["shine.png","ihsc.png","rlphb.png","slash.png","snate.png","tnt.png"]
 const bgbox = document.createElement("div")
 bgbox.classList.add("bgbox")
 document.body.append(bgbox)
@@ -11,7 +11,7 @@ function snow(){
     var flake = document.createElement("img")
     flake.classList.add("bgsnow")
     flbox.append(flake)
-    let flakeimg=Math.floor(Math.random()*4)
+    let flakeimg=Math.floor(Math.random()*flakes.length)
     flake.src="imgs/bg/"+flakes[flakeimg]
 
     let left=Math.floor(Math.random()*100-15)
