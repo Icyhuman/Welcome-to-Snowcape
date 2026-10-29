@@ -1,5 +1,5 @@
 //Background snow effect
-const flakes=["shine.png","ihsc.png","rlphb.png","slash.png","snate.png","tnt.png"]
+const flakes=["shine.png","ihsc.png","rlphb.png","slash.png","snate.png","tnt.png","gradflake.png","GAMER.png","siggy.png"]
 const bgbox = document.createElement("div")
 bgbox.classList.add("bgbox")
 document.body.append(bgbox)
