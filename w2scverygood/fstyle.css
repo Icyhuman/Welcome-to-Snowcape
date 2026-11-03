@@ -1,4 +1,4 @@
-div.fbox{
+/*div.fbox{
     width: 1600px;
     height: 720px;
     background-color: blueviolet;
@@ -8,7 +8,6 @@ div.fbox{
     margin-left: auto;
     margin-right: auto;
 }
-
 
 img.autoslide{
     position: absolute;
@@ -84,132 +83,13 @@ img.fashionicon{
 .playbtn:hover, .leftbtn:hover, .rightbtn:hover, .fashionicon:hover{
     cursor: url(imgs/cursorh.png) 10 0, auto;
 }
-
-
-
-
-
-div.navbarab{
-    background-image: url("navbarwip/welcomeb1.png");
-    position: absolute;
-    left: 0px;
-    width: 490px;
-    height: 165px;
-}
-div.navbarbb{
-    background-image: url("navbarwip/mapb.png");
-    position: absolute;
-    left: 490px;
-    width: 145px;
-    height: 165px;
-}
-div.navbarbb:hover{
-    background-image:url("navbarwip/maprh.png");
-}
-div.navbarcb{
-    background-image: url("navbarwip/fshb.png");
-    position: absolute;
-    left: 635px;
-    width: 163px;
-    height: 165px;
-}
-div.navbarcb:hover{
-    background-image:url("navbarwip/fshrh.png");
-}
-div.navbardb{
-    background-image: url("navbarwip/toub.png");
-    position: absolute;
-    left: 798px;
-    width: 158px;
-    height: 165px;
-}
-div.navbardb:hover{
-    background-image:url("navbarwip/tourh.png");
-}
-div.navbareb{
-    background-image: url("navbarwip/mtlb.png");
-    position: absolute;
-    left: 956px;
-    width: 158px;
-    height: 165px;
-}
-div.navbareb:hover{
-    background-image:url("navbarwip/mtlrh.png");
-}
-div.navbarfb{
-    background-image: url("navbarwip/cntb.png");
-    position: absolute;
-    left: 1114px;
-    width: 166px;
-    height: 165px;
-}
-div.navbarfb:hover{
-    background-image:url("navbarwip/cntrh.png");
-}
-
-div.barrra{
-    background-image: url("navbarwip/welcomer2.png");
-    position: absolute;
-    left: 0px;
-    width: 490px;
-    height: 165px;
-}
-div.barrrb{
-    background-image: url("navbarwip/mapr.png");
-    position: absolute;
-    left: 490px;
-    width: 145px;
-    height: 165px;
-}
-div.barrrb:hover{
-    background-image:url("navbarwip/maprh.png");
-}
-div.barrrc{
-    background-image: url("navbarwip/fshr.png");
-    position: absolute;
-    left: 635px;
-    width: 163px;
-    height: 165px;
-}
-div.barrrc:hover{
-    background-image:url("navbarwip/fshrh.png");
-}
-div.barrrd{
-    background-image: url("navbarwip/tour.png");
-    position: absolute;
-    left: 798px;
-    width: 158px;
-    height: 165px;
-}
-div.barrrd:hover{
-    background-image:url("navbarwip/tourh.png");
-}
-div.barrre{
-    background-image: url("navbarwip/mtlr.png");
-    position: absolute;
-    left: 956px;
-    width: 158px;
-    height: 165px;
-}
-div.barrre:hover{
-    background-image:url("navbarwip/mtlrh.png");
-}
-div.barrrf{
-    background-image: url("navbarwip/cntr.png");
-    position: absolute;
-    left: 1114px;
-    width: 166px;
-    height: 165px;
-}
-div.barrrf:hover{
-    background-image:url("navbarwip/cntrh.png");
-}
 div.accent{
     position: absolute; bottom: 0px; left: 0px;width: 430px; height: 50px;
 }
 img.micon{
     position: absolute; bottom: 5px; left: 5px;
 }
-img.ricon{ /*Shoutout to Nozaki Rikon lolmao*/
+img.ricon{ /*Shoutout to Nozaki Rikon lolmao*//*
     position: absolute; bottom: 5px; right: 5px;
 }
+*/

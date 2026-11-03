@@ -1,10 +1,11 @@
-/*Common css*/
+/*Common css all any every main shared I write the sections like this for ctrl+f purposes they look dumb but work 
+The css is organized by section, some elements may be copies of eachother and thus unnecessary, in which case oops
+*/
 body{
     /*background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
     animation: bganim 10s linear forwards infinite;*/
     cursor: url(imgs/cursor.png), auto;
 }
-
 
 @font-face { 
 	font-family: "cursiveserif"; 
@@ -48,56 +49,7 @@ p:not(.nametag):hover{
     90%{background-position: 0.75% 540px;}
     100%{background-position: 0% 600px;}
 }*/
-
-
-/*map.html the snowcape interactive map*/
-img.pin{
-    position: absolute; z-index: 3; height: 34px; width:25px;
-}
-.pin:hover{
-    cursor: url(imgs/cursorh.png) 10 0, auto;
-}
-
-div.mapbox{
-    border-style: solid;background-color: lavender;border-width: 8px;border-color: rgb(65, 19, 109);width: 1290px; border-radius: 25px; margin: auto;
-    padding: 5px;
-}
-
-div.cont{
-    position: relative; 
-    height: 750px; width: 1280px;  margin: auto;
-    margin-top: 20px;
-}
-
-@keyframes pinhover{
-  0%{transform:scale(1) translateX(0px) translateY(0px);  }
-
-  100%{transform:scale(1.2) translateX(0px) translateY(-3px);  }
-}
-img.pin:hover{
-    animation: pinhover 0.3s linear;animation-fill-mode: forwards;
-}
-
-img.box{
-    z-index: 4; display: none; position: absolute; left: 0px; top: 0px;
-    animation: boxappear 0.3s linear;animation-fill-mode: forwards;
-}
-
-img.boxgo{
-    animation: boxgone 0.3s linear;animation-fill-mode: forwards;
-}
-
-@keyframes boxappear{
-  0%{transform:scale(0) ;  }
-
-  100%{transform:scale(1) ;  }
-}
-@keyframes boxgone{
-  0%{transform:scale(1) ;  }
-
-  100%{transform:scale(0) ;  }
-}
-
+/*navbar navigation links header top*/
 div.navbarcont{
     position: relative; 
     width: 1280px; 
@@ -165,9 +117,169 @@ div.navbarf:hover{
     background-image:url("imgs/cnth.png");
 }
 
+/*Text size adjuster tsa tsscript.js windows intended vision i hate the linux text rendering ihatethelinuxtextrendering*/
+.tsbox{
+    position: fixed; left: 0px; bottom: 10px; width: fit-content;height: fit-content;display: flex; z-index: 9;
+}
+.tsabox{
+    position: relative;width: fit-content;height: 40px;background-color: antiquewhite;border: 2px solid black;opacity: 0.25;
+}
+.tsboxinner{
+    position: relative;width: fit-content;height: fit-content;background-color: antiquewhite;border: 2px solid black;
+}
+.tshover{
+position: relative;border-bottom: 1px dotted black;
+}
+.tsxplain{
+position: absolute; left: 100%;bottom: 0px; width: 300px; background-color: blanchedalmond;border: 2px solid black; visibility: hidden;
+}
+.tshover:hover .tsxplain{
+    visibility: visible;
+}
+
+/*map.html the snowcape interactive map*/
+img.pin{
+    position: absolute; z-index: 3; height: 34px; width:25px;
+}
+.pin:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+
+div.mapbox{
+    border-style: solid;background-color: lavender;border-width: 8px;border-color: rgb(65, 19, 109);width: 1290px; border-radius: 25px; margin: auto;
+    padding: 5px;
+}
+
+div.cont{
+    position: relative; 
+    height: 750px; width: 1280px;  margin: auto;
+    margin-top: 20px;
+}
+
+@keyframes pinhover{
+  0%{transform:scale(1) translateX(0px) translateY(0px);  }
+  100%{transform:scale(1.2) translateX(0px) translateY(-3px);  }
+}
+img.pin:hover{
+    animation: pinhover 0.3s linear;animation-fill-mode: forwards;
+}
+
+img.box{
+    z-index: 4; display: none; position: absolute; left: 0px; top: 0px;
+    animation: boxappear 0.3s linear;animation-fill-mode: forwards;
+}
+
+img.boxgo{
+    animation: boxgone 0.3s linear;animation-fill-mode: forwards;
+}
+
+@keyframes boxappear{
+  0%{transform:scale(0) ;  }
+  100%{transform:scale(1) ;  }
+}
+@keyframes boxgone{
+  0%{transform:scale(1) ;  }
+  100%{transform:scale(0) ;  }
+}
+
+/*fashion.html fashion cool clothes style shine sc slash clothing design showcase*/
+div.fbox{
+    width: 1600px;
+    height: 720px;
+    background-color: blueviolet;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.autoslide{
+    position: absolute;
+    bottom: 10px;
+    width: 1150px;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    --index: 0;
+}
+
+p.fashiondesc{    
+    top: 5px;
+    position: absolute;
+    left: 5px;
+    width: 420px;
+    font-size: larger;
+}
+
+div.hcont{
+    position: absolute;
+    width: 1150px;
+    height: 0px;
+    top: -35px;
+    text-align: center;
+}
+
+div.textbox{
+    position: absolute;
+    width: 430px;
+    height: 500px;
+    top: 65px;
+}
+
+div.gradient{
+    position: absolute;
+    top: 0px;
+    width: 430px;
+    height:65px;
+}
+
+h1.fashionhead{
+    font-family: "cursiveserif";
+    font-weight: bolder;
+    font-size: 50px;
+    align-self: center;
+    top: -35px;
+}
+
+img.playbtn{
+    position: absolute;
+    bottom: 7px;
+    width: 138px;
+    border-radius: 69px;
+}
+img.leftbtn{
+    position: absolute;
+    bottom: 5px;
+    width: 75px;
+}
+img.rightbtn{
+    position: absolute;
+    bottom: 5px;
+    width: 75px;
+}
+img.fashionicon{
+    position: absolute;
+    height: 145px;
+    border-radius: 72.5px;
+    aspect-ratio: 1/1;
+    bottom: 5px;
+}
+
+.playbtn:hover, .leftbtn:hover, .rightbtn:hover, .fashionicon:hover{
+    cursor: url(imgs/cursorh.png) 10 0, auto;
+}
+div.accent{
+    position: absolute; bottom: 0px; left: 0px;width: 430px; height: 50px;
+}
+img.micon{
+    position: absolute; bottom: 5px; left: 5px;
+}
+img.ricon{ /*Shoutout to Nozaki Rikon lolmao*/
+    position: absolute; bottom: 5px; right: 5px;
+}
 
 
-/* MEET THE LOCALS CSS IDK WHY THE OTHERS HAVE A SEPARATE FILE AND THIS DOESN'T LOLMAO */
+/* locals.html meet the locals timeline tearoom villagers profiles */
 div.profilefield{
     position: absolute;height: 50px; width: 160px; background-color: whitesmoke;
     border-radius: 10px;border: 5px dashed black; align-content: center;
@@ -187,7 +299,7 @@ div.poster{
     cursor: url(imgs/cursorh.png) 10 0, auto;
 }
 
-@keyframes slidein{
+@keyframes expandXY{
     0%{transform: scaleX(0) scaleY(0);}
     100%{transform: scaleX(1) scaleY(1);}
 }
@@ -196,7 +308,7 @@ p.nametag{
     margin-left: 5px;
     padding-left: 5px; padding-right: 5px;
     display: none;
-    animation: slidein 0.4s linear;
+    animation: expandXY 0.4s linear;
 }
 .poster:hover .nametag{
     display: block;
@@ -213,8 +325,7 @@ div.posterw{
     display: block;
 }
 
-
-@keyframes slidein2{
+@keyframes expandX{
     0%{transform: scaleX(0);}
     100%{transform: scaleX(1);}
 }
@@ -224,37 +335,31 @@ div.profbox{
     display: none;
     border-bottom-left-radius: 20px;
     transform-origin: right;
-    animation: slidein2 0.6s linear;
+    animation: expandX 0.6s linear;
 }
-@keyframes slideout{
+@keyframes squishX{
     0%{transform: scaleX(1);}
     100%{transform: scaleX(0);}
 }
 div.profboxbye{
-    animation: slideout 0.4s linear;
+    animation: squishX 0.4s linear;
 }
 
-@keyframes tea{
-    0%{transform: scaleX(0);}
-    100%{transform: scaleX(1);}}
 div.tearoom{
     transform-origin: right;
-    animation: tea 0.3s linear;
+    animation: expandX 0.3s linear;
     height: 720px;
     position: absolute; top: 0px;left: 0px; display: none;
 }
-@keyframes teab{
-    0%{transform: scaleX(1);}
-    100%{transform: scaleX(0);}}
 div.tearoomb{
     transform-origin: left;
-    animation: teab 0.3s linear;
+    animation: squishX 0.3s linear;
 }
 .xbtn:hover, .siggy:hover, .screenshot:hover, .pfp:hover, .arrow:hover{
     cursor: url(imgs/cursorh.png) 10 0, auto;
 }
 
-/* Oioioi we be makin the brochure */
+/* tourism.html tourism hotel museum the w2sc cyber-brochure 2001 */
 @keyframes yappin{
     0%{opacity: 0;}
     0%{opacity: 1;}
@@ -378,6 +483,7 @@ div.tearoomb{
     position: absolute;
     margin-top: 0px;
 }
+/*before after slider in museum section*/
 .bafter{
     width: 640px; height: 370px; position: absolute;
 }
@@ -437,24 +543,27 @@ div.tearoomb{
     filter: drop-shadow(0 0 15px rgb(253, 191, 20));
 }
 
-/*Text size adjuster*/
-.tsbox{
-    position: fixed; left: 0px; bottom: 10px; width: fit-content;height: fit-content;display: flex; z-index: 9;
+/*Background winXP style*/
+.bgXPbox{
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(210, 234, 255),rgb(125, 158, 212));
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
 }
-.tsabox{
-    position: relative;width: fit-content;height: 40px;background-color: antiquewhite;border: 2px solid black;opacity: 0.25;
+.XPhill{
+    position: absolute; bottom: 0%; width: 100%; max-height: 50vh; z-index: -2;
 }
-.tsboxinner{
-    position: relative;width: fit-content;height: fit-content;background-color: antiquewhite;border: 2px solid black;
+.XPclouds{
+    position: absolute; width: 100%; height: 100%; background-image: url(imgs/bg/clouds.png); z-index: -3; 
+    background-repeat: repeat; background-size: 70vw;
+    animation: XPcloudsanim 17s linear forwards infinite;
 }
-.tshover{
-position: relative;border-bottom: 1px dotted black;
-}
-.tsxplain{
-position: absolute; left: 100%;bottom: 0px; width: 300px; background-color: blanchedalmond;border: 2px solid black; visibility: hidden;
-}
-.tshover:hover .tsxplain{
-    visibility: visible;
+@keyframes XPcloudsanim{
+    0%{background-position: 0px 0%;}
+    100%{background-position: -70vw 0%;} 
 }
 
 /*Background snow style*/
@@ -490,27 +599,4 @@ position: absolute; left: 100%;bottom: 0px; width: 300px; background-color: blan
     0%{transform: translateX(0vw);}
     50%{transform: translateX(19vw);}
     100%{transform: translateX(0vw);}
-}
-
-/*Background winXP style*/
-.bgXPbox{
-    position: fixed;
-    background: linear-gradient(to bottom, rgb(210, 234, 255),rgb(125, 158, 212));
-    left: 0%;
-    top: 0%;
-    width: 100vw;
-    height: 100vh;
-    z-index: -5;
-}
-.XPhill{
-    position: absolute; bottom: 0%; width: 100%; max-height: 50vh; z-index: -2;
-}
-.XPclouds{
-    position: absolute; width: 100%; height: 100%; background-image: url(imgs/bg/clouds.png); z-index: -3; 
-    background-repeat: repeat; background-size: 70vw;
-    animation: XPcloudsanim 17s linear forwards infinite;
-}/*Hardcoded animation because clouds are 1207px wide. Change if changing bg*/
-@keyframes XPcloudsanim{
-    0%{background-position: 0px 0%;}
-    100%{background-position: -70vw 0%;} 
 }
