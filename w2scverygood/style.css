@@ -278,6 +278,40 @@ img.ricon{ /*Shoutout to Nozaki Rikon lolmao*/
     position: absolute; bottom: 5px; right: 5px;
 }
 
+/*Background snow style bg bgsnow*/
+.bgsbox{
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+.bgsnowc{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: -5vw;
+    animation: snowfall 5s linear infinite;
+}
+.bgsnow{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 0vw;
+    animation: snowsway 3s ease-in-out infinite;
+    image-rendering: pixelated;
+}
+@keyframes snowfall{
+    0%{transform: translateY(0vh);}
+    100%{transform: translateY(100vh) translateY(10vw);}
+}
+@keyframes snowsway{
+    0%{transform: translateX(0vw);}
+    50%{transform: translateX(19vw);}
+    100%{transform: translateX(0vw);}
+}
 
 /* locals.html meet the locals timeline tearoom villagers profiles */
 div.profilefield{
@@ -565,39 +599,4 @@ div.tearoomb{
 @keyframes XPcloudsanim{
     0%{background-position: 0px 0%;}
     100%{background-position: -70vw 0%;} 
-}
-
-/*Background snow style*/
-.bgsbox{
-    position: fixed;
-    background: linear-gradient(to bottom, rgb(249, 227, 255),rgb(194, 153, 218));
-    left: 0%;
-    top: 0%;
-    width: 100vw;
-    height: 100vh;
-    z-index: -5;
-}
-.bgsnowc{
-    width: 5vw;
-    height: 5vw;
-    position: absolute;
-    top: -5vw;
-    animation: snowfall 5s linear infinite;
-}
-.bgsnow{
-    width: 5vw;
-    height: 5vw;
-    position: absolute;
-    top: 0vw;
-    animation: snowsway 3s ease-in-out infinite;
-    image-rendering: pixelated;
-}
-@keyframes snowfall{
-    0%{transform: translateY(0vh);}
-    100%{transform: translateY(100vh) translateY(10vw);}
-}
-@keyframes snowsway{
-    0%{transform: translateX(0vw);}
-    50%{transform: translateX(19vw);}
-    100%{transform: translateX(0vw);}
 }
